@@ -39,7 +39,7 @@ KeywordFiltering.
 3. Follow the prompts.
 
 ## Download
-- Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild]([[https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-fix-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-bannedWordList-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/ftpobpl47hGTN56/Twitch_emote-blocker_chromeEXT_present_mainpage_7BTVFZTV/releases/download/7BTVFZ__Chrome_Build_v2.6.55__28_07_2025_/7BTVFZ__Chrome_Build_v2.6.55__28_07_2025_.zip)))
+- Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild]([[https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-fix-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-bannedWordList-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/ftpobpl47hGTN56/Twitch_emote-blocker_chromeEXT_present_mainpage_7BTVFZTV/releases/download/7BTVFZ__Chrome_Build_v2.6.55__28_07_2025_/7BTVFZ__Chrome_Build_v2.6.55__28_07_2025_.zip))
 
 ## Notes
 - **Firefox Compatibility**: The script may have issues on Firefox. For the best experience, use Chrome with Tampermonkey.
