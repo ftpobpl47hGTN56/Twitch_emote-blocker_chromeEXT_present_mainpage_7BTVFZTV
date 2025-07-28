@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Control Emotes Panel: Hide Twitch chat emotes by channel author with a management interface and context menu. Not supported by FFZ, BTTV, or 7TV.">
+    <meta name="keywords" content="twitch chat, block emotes, hide emotes, userscript, greasyfork, control emotes panel, twitch chat filter, 7tv, bttv, ffz, emote blocker">
+    <meta name="author" content="tapeavion">
+    <title>Twitch emote blocker</title>
+    <style>
+  html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #d3d3d3;
+    background: linear-gradient(356deg, #250e31, #00524efc);
+}
+
+header {
+    background: linear-gradient(180deg, #211536, #00524e00);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: solid #00ff8866;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00ff88;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn-chrome {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1c5094;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(180deg, #231334, #1e4946);
+    border-top: solid #00ff8866;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 800px;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+}
+
+.slide-img {
+    max-width: 100%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    object-fit: contain;
+    border: 3px #1a665f solid;
+}
+
+.slide-caption {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 235%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    z-index: 20;
+}
+
+.prev {
+    left: 275px;
+}
+
+.next {
+    right: 275px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10;
+    position: relative;
+    bottom: 95px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active, .dot:hover {
+    background-color: #00ff88;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.modal-close:hover {
+    color: #00ff88;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    section {
+        padding: 1rem;
+    }
+    .slide-img {
+        max-height: 300px;
+    }
+    .slide-caption {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .prev, .next {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+ /* Кастомный скроллбар для Webkit-браузеров */
+ ::-webkit-scrollbar {
+            width: 25px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(193, 165, 239);
+            border-radius: 8px;
+            border: 3px solid rgb(79, 62, 106);
+            min-height: 80px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(69, 85, 101, 0);
+            border-radius: 8px;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/openiConPanelbttnVariant2.png?v=2">
+    <noscript><div><img src="https://mc.yandex.ru/watch/101486355" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</head>
+<body> 
+    <header>
+        <h1>Twitch emote blocker | Control Emotes Panel</h1>
+        <p>A userscript to hide Twitch chat emotes based on the channel author's name, not supported by FFZ, BTTV, or 7TV. Features a management interface and context menu.</p>
+        <a href="https://greasyfork.org/en/scripts/520235-control-emotes-panel-2-6-53-c-tapeavion" class="btn">Download Now</a>
+    </header>
+
+    <section id="about">
+        <h2>About Control Emotes Panel</h2>
+        <p>A userscript for Twitch that lets you hide emotes in chat based on the channel author's name, a feature not supported by FFZ, BTTV, or 7TV. Blocked emotes are hidden, leaving chat messages intact.</p>
+        <ul>
+            <li>Hides emotes from blocked channels, even in other chats.</li>
+            <li>User-friendly interface for adding, removing, importing, and exporting blocked channels.</li>
+            <li>Context menu for quick emote management.</li>
+            <li>Smooth iOS-style toggle switch for the control panel.</li>
+        </ul>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Hide emotes in Twitch chat from blocked channels</li>
+            <li>User-friendly interface for managing channel lists</li>
+            <li>Context menu for quick emote management</li>
+            <li>Works across different Twitch chats</li>
+            <li>Smooth iOS-style toggle switch</li>
+        </ul>
+    </section>
+
+    <section id="installation">
+        <h2>How to Install</h2>
+        <h3>Option 1: Install as a Userscript</h3>
+        <ol>
+            <li>Install a userscript manager, such as <a href="https://www.tampermonkey.net/">Tampermonkey</a> or Greasemonkey.</li>
+            <li>Visit the <a href="https://greasyfork.org/en/scripts/520235-control-emotes-panel-2-6-52-c-tapeavion">GreasyFork page</a>.</li>
+            <li>Click "Install this script" and follow the prompts.</li>
+        </ol>
+        <h3>Option 2: Install as a Chrome Extension</h3>
+        <ol>
+            <li>Click the button below to download the extension file (packed in a .zip).</li>
+            <li>Extract the <code>.crx</code> file from the downloaded .zip.</li>
+            <li>Open Chrome and navigate to <code>chrome://extensions/</code>.</li>
+            <li>Enable "Developer mode" in the top-right corner.</li>
+            <li>Drag and drop the extracted <code>.crx</code> file onto the Extensions page.</li>
+            <li>Confirm the installation when prompted.</li>
+        </ol>
+        <a href="https://github.com/gullampisFx8A/Control_Emotes_Panel_Twitch_JS/releases/download/2.6.55-ui-fix-update/2.6.55-7btvfzttv_Chrome_extension_15_05_2025_FinalBuild.zip" class="btn" download>Download Chrome Extension (.zip)</a>
+        <p><strong>Source Code:</strong> Available on <a href="https://github.com/gullampisFx8A/Control_Emotes_Panel_Twitch_JS">GitHub</a>.</p>
+    </section>
+
+    <section id="screenshots">
+        <h2>What does it look like? </h2> 
+        <!-- Кнопки вынесены за пределы slideshow-container -->
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+        
+        <div class="slideshow-container">
+            <div class="slides-wrapper">
+                <div class="slide">
+                    <img src="images/panelPresent.png" alt="Control Emotes Panel main interface" class="slide-img">
+                    <div class="slide-caption">Main Panel Interface: Easily manage blocked channels with a clean, user-friendly design.</div>
+                </div>
+                <div class="slide">
+                    <img src="images/panelPresentDeafultTheme.png" alt="Control Emotes Panel with default theme" class="slide-img">
+                    <div class="slide-caption">Default Theme: A sleek, minimalistic look for seamless integration with Twitch chat.</div>
+                </div>
+                <div class="slide">
+                    <img src="images/panelPresentWatertheme.png" alt="Control Emotes Panel with water theme" class="slide-img">
+                    <div class="slide-caption">Water Theme: A refreshing, blue-toned interface for a unique visual experience.</div>
+                </div>
+                <div class="slide">
+                    <img src="images/scrshtBlackRaspberryTheme.png" alt="Control Emotes Panel with Black Raspberry theme" class="slide-img">
+                    <div class="slide-caption">Black Raspberry Theme: A bold, dark theme for managing your blocked channel list.</div>
+                </div>
+                <div class="slide">
+                    <img src="images/contexMenubttnpresent.png" alt="Context menu button" class="slide-img">
+                    <div class="slide-caption">Context Menu Button: Quick access to emote management directly from the chat.</div>
+                </div>
+                <div class="slide">
+                    <img src="images/contexMenuShowpopup.png" alt="Context menu popup" class="slide-img">
+                    <div class="slide-caption">Context Menu Popup: Manage emotes with a single click using the intuitive popup menu.</div>
+                </div>
+                <div class="slide">
+                    <img src="images/MenuShowpopupEmote.png" alt="Emote selection menu" class="slide-img">
+                    <div class="slide-caption">Emote Selection Menu: Select and block specific emotes in real-time with ease.</div>
+                </div>
+                <div class="slide">
+                    <img src="images/panelPresentChrome.png" alt="Chrome ui" class="slide-img">
+                    <div class="slide-caption">Chrome Twitch Emote Blocker: interface UI panel .</div>
+                </div>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <h3>How do I block emotes?</h3>
+        <p>Use the control panel or context menu right click mouse,
+             to select and disable specific emotes in real-time.</p>
+        <h3>Is it free?</h3>
+        <p>Yes, completely free and open-source!</p>
+        <h3>Does it work on Firefox?</h3>
+        <p>Currently, the script may have issues on Firefox. For the best experience, use Chrome with Tampermonkey. We're working on Firefox compatibility!</p>
+    </section>
+
+    <footer>
+        <p>Created by tapeavion | Dec 9, 2024 and April 18, 2025 <a href="https://greasyfork.org/en/scripts/520235-control-emotes-panel-2-6-53-c-tapeavion/feedback">Contact</a></p>
+        <p><a href="https://app.netlify.com/sites/twitch-emote-blocker-7btvfzttv/deploys"><img src="https://api.netlify.com/api/v1/badges/2a1c1882-661c-40b8-951e-d1be3658b638/deploy-status" alt="Netlify Deploy Status"></a></p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let slidesWrapper = document.querySelector('.slides-wrapper');
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            
+            slidesWrapper.style.transform = `translateX(-${(slideIndex - 1) * 100}%)`;
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            if (dots[slideIndex - 1]) {
+                dots[slideIndex - 1].className += " active";
+            } else {
+                console.warn(`Точка для слайда ${slideIndex} не найдена. Всего слайдов: ${slides.length}, точек: ${dots.length}`);
+            }
+        }
+        
+        document.querySelectorAll('.slide-img').forEach(img => {
+            const originalSrc = img.src;
+            const lowResSrc = originalSrc.replace('.png', '_lowres.jpg');
+            
+            const testImg = new Image();
+            testImg.onload = () => {
+                img.src = lowResSrc;
+                console.log(`Загружено сжатое изображение: ${lowResSrc}`);
+            };
+            testImg.onerror = () => {
+                console.warn(`Сжатое изображение не найдено: ${lowResSrc}, используется оригинальное: ${originalSrc}`);
+            };
+            testImg.src = lowResSrc;
+        });
+        
+        const modal = document.createElement('div');
+        modal.className = 'modal';
+        modal.innerHTML = `
+            <span class="modal-close">×</span>
+            <img class="modal-content" id="modal-img">
+        `;
+        document.body.appendChild(modal);
+        
+        const modalImg = document.getElementById('modal-img');
+        const closeModal = document.querySelector('.modal-close');
+        
+        document.querySelectorAll('.slide-img').forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                const originalSrc = img.src.replace('_lowres', '');
+                modalImg.src = originalSrc;
+                console.log(`Открывается оригинальное изображение: ${originalSrc}`);
+            });
+        });
+        
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        
+        setInterval(() => {
+            changeSlide(1);
+        }, 55000);
+    </script>
+</body>
+</html>
