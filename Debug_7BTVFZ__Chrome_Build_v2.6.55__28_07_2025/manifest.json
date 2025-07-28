@@ -1,0 +1,127 @@
+{
+    "manifest_version": 3,
+    "author": "(C) tapeavion",
+    "name": " DEBUG Control Emotes Panel 7BTVFZ",
+  "version": "2.6.55",
+    "description": "Block Twitch emotes in chat with a management interface ",
+    "permissions": [
+        "downloads",
+        "storage",
+        "contextMenus",
+        "activeTab",
+        "scripting",
+        "webNavigation"
+    ],
+    "host_permissions": [
+        "https://*.kick.com/*", 
+        "https://www.twitch.tv/*",
+        "https://*.twitch.tv/*",
+        "https://*.ttvnw.net/*",
+        "https://*.jtvnw.net/*",
+        "https://*.twitchcdn.net/*",
+        "https://cdn.frankerfacez.com/*",
+        "https://cdn.7tv.app/*",
+        "https://cdn.betterttv.net/*"
+    ],
+    "background": {
+         "service_worker": "background.js" 
+    },
+    "content_scripts": [
+        {
+            "matches": [ 
+                
+                "https://www.twitch.tv/*",
+                "https://*.twitch.tv/*",
+                "https://*.ttvnw.net/*",
+                "https://*.jtvnw.net/*",
+                "https://*.twitchcdn.net/*",
+                "https://cdn.frankerfacez.com/*",
+                "https://cdn.7tv.app/*",
+                "https://cdn.betterttv.net/*"
+            ],
+     "js": [
+        "ui.js", 
+        "emojiSpamProtection.js",
+        "ChatFilter.js", 
+        "panel__Settings.js",  
+        "enable__disableBlocking.js",
+        "themes.js",
+        "bindButtonHandlers.js", 
+        "chart.umd.js", 
+          "simplebar.min.js", 
+        "notifications.js", 
+        "7BTVFZ__storage.js",
+        "Logging___7BTVFZ__PANEL.js",
+        "PreviewerMedia.js",  
+        "renamedTwitchUsers.js",
+          "hide__twitchStreamer_Description.js",
+        "combined.js"
+        ],
+    "type": "module",
+     "css": [
+        "css/Lists.css",
+         "css/styles.css", 
+         "css/data-selection-modal.css",  
+         "css/emote-preview-container.css",
+         "css/notifications.css",
+          "css/ios-switch-for-notifications.css",
+          "css/sort-chatbanned-items.css",
+          "css/fix_twitch_styles.css",
+         "css/rename_users_twtch.css", 
+         "css/panelSettings.css"
+        ],
+    "run_at": "document_idle",
+    "all_frames": true
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+               "ui.js", 
+               "emojiSpamProtection.js",
+               "ChatFilter.js",  
+               "panel__Settings.js",   
+               "enable__disableBlocking.js",
+               "themes.js",
+               "bindButtonHandlers.js", 
+                "worker.js",
+                "notifications.js",
+                "7BTVFZ__storage.js",
+                "Logging___7BTVFZ__PANEL.js",
+                "PreviewerMedia.js", 
+                "simplebar.min.js", 
+               "renamedTwitchUsers.js",
+                 "hide__twitchStreamer_Description.js",
+                "css/Lists.css",
+                "css/styles.css", 
+                 "css/emote-preview-container.css",
+                "css/data-selection-modal.css",
+                "css/themes/glassmorphism.css",
+                "css/themes/dark.css",
+                "css/themes/sapphireBlue.css",
+                "css/themes/darkAncientNights.css",
+                "css/themes/darkRaspberry.css",
+                "css/themes/lightMode.css",
+                "css/themes/amberBlaze.css",
+                "css/themes/deepSeaTurquoise.css",
+                "css/themes/amethystGlow.css",
+                "css/ios-switch-for-notifications.css",
+                "css/sort-chatbanned-items.css",
+               "css/fix_twitch_styles.css",
+               "css/rename_users_twtch.css",
+               
+                "css/panelSettings.css"  
+            ], 
+         "matches": [ 
+                "https://www.twitch.tv/*", 
+                "https://*.twitch.tv/*"  
+            ]
+        }
+    ],
+    "content_security_policy": {
+        "extension_pages":  "script-src 'self'; object-src 'self'; img-src 'self' https://cdn.7tv.app https://cdn.betterttv.net https://*.twitchcdn.net"
+    },
+    "icons": {
+        "256": "Debug_7btvfz_logo__Panel_List_V4.png"
+    }
+}
