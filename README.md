@@ -6,17 +6,23 @@ A userscript for chat twitch that lets you
  Blocked emotes are hidden, leaving chat messages intact.
 
 ## Features
-![image](https://github.com/user-attachments/assets/e450916e-d44e-46f9-aa98-143921f2e92e)
 hue-rotate for ui.
+<img width="894" height="724" alt="image" src="https://github.com/user-attachments/assets/c9f6bd1d-f23b-47f8-abbd-9f4ed5e3e3d6" />
+
+Settings resizable panel inside  panel
+<img width="887" height="736" alt="image" src="https://github.com/user-attachments/assets/f4392ed9-ad7d-426f-b60c-815a934ac398" />
+
 
 ShowpopupEmote from FFZTooltip
-![image](https://github.com/user-attachments/assets/9378d93e-a8a7-4b87-accf-52a4711ecd86)
+<img width="600" height="258" alt="image" src="https://github.com/user-attachments/assets/229ab82c-cc52-4d83-ad1a-aa9fbd19fbee" />
+
 
 localStorage KeywordF & bannedUsers
 ![image](https://github.com/user-attachments/assets/8486b6b1-130e-471d-b880-01a82d32e6ff)
 
 search chatbanneditems
-![image](https://github.com/user-attachments/assets/26347dab-6781-46cb-8574-836a873d5061)
+<img width="841" height="636" alt="image" src="https://github.com/user-attachments/assets/ecfb768c-9acc-4b3c-b53e-083c59b7440b" />
+
 
 KeywordFiltering.
 
