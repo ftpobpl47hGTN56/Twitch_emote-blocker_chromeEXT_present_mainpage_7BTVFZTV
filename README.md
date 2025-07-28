@@ -44,3 +44,6 @@ KeywordFiltering.
 ## Notes
 - **Firefox Compatibility**: The script may have issues on Firefox. For the best experience, use Chrome with Tampermonkey.
 - Learn more at [Twitch Emote Blocker](https://emote-blocker-chrome-7bvtfz-r6jt4eue5.netlify.app/).
+
+
+<img width="1463" height="805" alt="image" src="https://github.com/user-attachments/assets/2c5fb971-be0d-4452-86d2-e384f4538498" />
