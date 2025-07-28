@@ -18,7 +18,8 @@ ShowpopupEmote from FFZTooltip
 
 
 localStorage KeywordF & bannedUsers
-![image](https://github.com/user-attachments/assets/8486b6b1-130e-471d-b880-01a82d32e6ff)
+<img width="861" height="432" alt="image" src="https://github.com/user-attachments/assets/370754c1-4c7e-4f83-a688-03dd273bb028" />
+
 
 search chatbanneditems
 <img width="841" height="636" alt="image" src="https://github.com/user-attachments/assets/ecfb768c-9acc-4b3c-b53e-083c59b7440b" />
