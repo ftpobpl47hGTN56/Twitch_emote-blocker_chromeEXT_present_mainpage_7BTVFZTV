@@ -39,8 +39,9 @@ KeywordFiltering.
 3. Follow the prompts.
 
 
+
 ## Download
-- Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_28_07_2025_FinalBuild](https://github.com/ftpobpl47hGTN56/Twitch_emote-blocker_chromeEXT_present_mainpage_7BTVFZTV/releases/download/7BTVFZ__Chrome_Build_v2.6.55__08_08_2025_/7BTVFZ__Chrome_Build_v2.6.55__08_08_2025.zip)
+- Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_08_08_2025_FinalBuild](https://github.com/ftpobpl47hGTN56/Twitch_emote-blocker_chromeEXT_present_mainpage_7BTVFZTV/releases/download/7BTVFZ__Chrome_Build_v2.6.55__08_08_2025_/7BTVFZ__Chrome_Build_v2.6.55__08_08_2025.zip)
 
 ## Notes
 - **Firefox Compatibility**: The script may have issues on Firefox. For the best experience, use Chrome with Tampermonkey.
