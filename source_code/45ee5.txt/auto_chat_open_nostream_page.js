@@ -1,5 +1,4 @@
-// C:\Projects__on__SSD_C_Win10\Debug_7BTVFZ__Chrome_Build_v2.6.55__28_07_2025\js\auto_chat_open_nostream_page.js
-(function () {
+ (function () {
     console.log('Скрипт auto_chat_open_nostream_page.js загружен в', new Date().toLocaleString());
     // Функция для проверки, можно ли открывать чат
     function shouldOpenChat() {
