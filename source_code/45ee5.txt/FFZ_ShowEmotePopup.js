@@ -166,6 +166,8 @@ function showTwitchEmotePopup(emotes, callback) {
     `;
     document.body.appendChild(popup);
     console.log("[Content] Twitch popup element created and appended to body");
+    // Добавляем кнопку "Копировать всё"
+    addCopyAllButton('twitch-emote-popup');
     // Инлайн-стили для попапа
     popup.style.position = 'fixed';
     popup.style.boxShadow = 'rgb(75 191 191 / 24%) 0px 4px 10px 2px';
@@ -415,6 +417,8 @@ function showEmoteSelectionPopup(emotes, callback) {
     `;
     document.body.appendChild(popup);
     console.log("[Content] FFZ popup element created and appended to body");
+    // Добавляем кнопку "Копировать всё"
+    addCopyAllButton('twitch-emote-popup');
     // Инлайн-стили для попапа
     popup.style.position = 'fixed';
     popup.style.boxShadow = 'rgb(75 191 191 / 24%) 0px 4px 10px 2px';
@@ -953,4 +957,50 @@ setInterval(() => {
         console.warn("[Content] Twitch viewer card not found in global check");
     }
 }, 100);
+// Создаём и добавляем кнопку "Копировать всё"
+function addCopyAllButton() {
+    const popup = document.getElementById('emote-selection-popup');
+    if (!popup || popup.querySelector('.copy-all-button'))
+        return;
+    const btn = document.createElement('button');
+    btn.className = 'copy-all-button';
+    btn.style.cssText = `
+        background: rgba(85, 221, 255, 0.11);
+        color: rgba(85, 255, 127, 0.71);
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    `;
+    btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+         style="width:16px;height:16px;">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4
+               a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+    </svg> copy `;
+    btn.addEventListener('click', () => {
+        const allEmotes = Array.from(popup.querySelectorAll('.emote-info span'))
+            .map(span => span.textContent.replace(/\s*\(.*?\)\s*/g, '').trim())
+            .filter(text => text.length > 0)
+            .join(' ');
+        copyToClipboard(allEmotes);
+    });
+    popup.appendChild(btn);
+}
+// Функция копирования в буфер обмена
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text)
+        .then(() => console.log(`Скопировано: ${text}`))
+        .catch(err => console.error('Ошибка копирования:', err));
+}
+// Запуск
+addCopyAllButton();
 //# sourceMappingURL=FFZ_ShowEmotePopup.js.map
