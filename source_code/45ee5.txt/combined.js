@@ -1,11 +1,5 @@
-// ======== combined.js главный модуль точка входа ==== //
-// 4921 function updateBannedСhatList
-// 3602 function updateBlockedEmotesList
-// 4172 function makePanelResizable
-// 4416 function makePanelDraggable
-// 4483 СТИЛИ button-container
-// 3108 end of showEmoteSelectionPopup 
-// ======== combined.js главный модуль точка входа ==== //
+ 
+// ======== combined.js  ==== //
 // Ожидание загрузки всех модулей
 Promise.all([
     import('./ui.js').then(module => {
@@ -4622,6 +4616,7 @@ highlightStyle.innerHTML = `
         cursor: nwse-resize;
     } 
         
+
 `;
 document.head.appendChild(highlightStyle);
 // =================== end of Стили для подсветки и блокировки элементов ==================== //
