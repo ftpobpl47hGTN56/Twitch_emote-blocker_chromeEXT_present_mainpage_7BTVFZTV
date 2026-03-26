@@ -26,8 +26,7 @@ KeywordFiltering.
 ## Installation
 1. Install a userscript manager like [Tampermonkey](https://greasyfork.org/en/scripts/520235-control-emotes-panel-2-6-52-c-tapeavion) or Greasemonkey.
 2. Click [Install this script](https://greasyfork.org/en/scripts/520235-control-emotes-panel-2-6-52-c-tapeavion) on this page.
-3. Follow the prompts.
-
+ 
 ## Download
 - Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild]([https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-fix-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-bannedWordList-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip))
 
