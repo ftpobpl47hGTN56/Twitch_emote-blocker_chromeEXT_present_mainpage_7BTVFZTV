@@ -6,8 +6,8 @@ A userscript for Twitch that lets you hide emotes in chat based on the channel a
 hue-rotate for ui.
 
 ShowpopupEmote from FFZTooltip
-![image](<img width="355" height="195" alt="image" src="https://github.com/user-attachments/assets/5d8026c0-1a0d-4327-9459-dd7e388dc638" />
-)
+ <img width="355" height="195" alt="image" src="https://github.com/user-attachments/assets/7fac4b83-b9d5-4c62-889a-8f8176cd3bae" />
+
 
 localStorage KeywordF & bannedUsers
 ![image](https://github.com/user-attachments/assets/8486b6b1-130e-471d-b880-01a82d32e6ff)
