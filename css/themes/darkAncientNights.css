@@ -1,0 +1,274 @@
+/* --------- darkAncientNights.css --------- */
+
+
+
+/* модалка настройки текст цвет*/ 
+.notification-setting , 
+h3#settings-title {
+    color: #a0c0ca !important; 
+}
+
+.ios-switch input:checked + .slider {
+     background: #246a71 !important;
+}
+ 
+.ios-switch .slider:before {
+     background: rgb(71 169 167) !important;
+}
+
+#control-7btvfz-center-x78x05x46-panel,
+.modal-content {
+    /* background: linear-gradient(180deg, #282f34, #32353c 46%, #131520 85%) !important; */
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid #a0c0ca !important;
+    box-shadow: 0px 7px 19px 6px #131f3adc !important;
+    background: linear-gradient(247deg,#172435 0%, #201c40 40%, #0e3434 80%) !important;
+}
+
+#counter {
+    background: rgb(27 32 49) !important;
+    color: rgb(160, 192, 202) !important;
+    border: 3px solid rgb(160, 192, 202) !important;
+}
+
+#blocked-emotes-list,#banned-chat-list  {
+    box-shadow: #151b45aa 0px 100px 41px 0px inset !important;
+    color: #a0c0ca !important;
+    border: 1px solid #a0c0ca !important;
+    /* background: linear-gradient(359deg, rgb(20 23 49), rgb(48 54 87) 46%, rgb(11 13 25) 85%) !important; */
+    background: linear-gradient(351deg, rgb(38 62 62) 0%, rgb(53 53 53) 48%, rgb(37 43 53) 100%) !important;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #0a0f2c !important;
+    border: 3px solid #20295c !important;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #20295c !important;
+}
+
+.blocked-item {
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+li.blocked-item {
+    border-top: solid #7580c9 !important;
+}
+
+.blocked-item a {
+    color: #7580c9 !important;
+}
+
+.blocked-item .date {
+    color: #7580c9 !important;
+}
+
+.delete-button {
+    background: #131f3a !important;
+    color: #9298bf !important;
+}
+
+ 
+#search-input {
+    background: #131f3a !important;
+    color: #a0c0ca !important;
+    border: 1px solid #a0c0ca !important;
+    box-shadow: #151b458f 0px 4px 6px inset !important;
+}
+
+#search-button ,
+#settings-button {
+    background: #20295c !important;
+    color: #6479f2 !important;
+}
+ 
+
+.input-container #platform-select {
+    background: #131f3a !important;
+    color: #a0c0ca !important;
+    border: 1px solid #a0c0ca !important;
+}
+
+#add-input {
+    background: #131f3a !important;
+    color: #a0c0ca !important;
+    border: 1px solid #a0c0ca !important;
+}
+
+#add-button ,
+#settings-button ,  
+.close-modal-settings-button {  
+    background: #20295c !important;
+    color: #6479f2 !important;
+}
+
+button#blocked-emotes-list-button {
+    color: #a2a8c4 !important;
+}
+
+button#banned-chat-list-button {
+    color: #a2a8c4 !important;
+}
+
+
+
+.button-container button {
+    background: #1b2031 ;
+    color: #a2a8c4 !important;
+    border: 1px solid #a0c0ca3d !important;
+}
+
+.button-container {
+    background: linear-gradient(57deg, #151b4582, #1016368f) !important;
+    border: 1px solid #a0c0ca !important;
+    background: linear-gradient(184deg, #3c516c 0%, #201c40 40%, #244a4a 80%) !important;
+}
+
+#theme-select {
+    background: #131f3a !important;
+    color: #a0c0ca !important;
+    border: 1px solid #a0c0ca !important;
+}
+
+ 
+#chart-modal {
+    background: #131f3abf !important;
+}
+
+ 
+.chart-container {
+    background: #20295c !important;
+    color: #343f85 !important;
+}
+
+ 
+#close-chart-button {
+    background: #0a0f2c !important;
+    color: #ffffff !important;
+}
+
+#close-chart-button:hover {
+    background: #343f85 !important;
+}
+
+#close-panel-button {
+    color: #7580c9 !important;
+}
+
+/* сортивщик */
+#sortContainer ,
+#sort-chatbanned-items-container {
+    background-color: #1b2031 !important;
+    border: 1px solid #a0c0ca !important;
+    box-shadow: rgba(0, 0, 0, 0) 0px 15px 6px 0px !important;
+    color: #a0c0ca !important;
+}
+
+#sortContainer ,
+#sortContainer button ,
+#sort-chatbanned-items-container 
+ 
+
+ 
+button#unblock-all-button {
+    background: rgb(27 32 49) !important;
+    color: rgb(160, 192, 202) !important;
+    border: 1px solid rgb(160 192 202 / 45%) !important;
+}
+
+/* enable/disable buttons */
+#unblock-all-button, #block-all-button {
+    background: #1b2031 !important;
+    color: #a2a8c4 !important;
+    transition: background 0.3s ease !important;
+    border: 1px solid #a0c0ca75 !important;
+}
+
+#unblock-all-button.active, #block-all-button.active {
+    background: #3b466a !important;
+    color: #a0c0ca !important;
+    border: 1px solid #a0c0ca75 !important;
+}
+
+#unblock-all-button:hover, #block-all-button:hover {
+    background: #343f85 !important;
+}
+
+/* Container for the label and switch */
+#open-panel-container {
+    background: #27316a !important;
+    border: 1px solid #7783ce !important;
+}
+
+/* Label (Open Panel/Close Panel text) */
+#open-panel-label {
+    color: #6479f2 !important;
+    user-select: none !important;
+}
+
+/* iOS-style switch (visual only) */
+#open-panel-button {
+    background-color: #1b2038 !important;
+}
+
+/* Thumb (the sliding circle) */
+#open-panel-button::before {
+    background-color: #27316a !important;
+    transition: transform 0.3s ease !important;
+    box-shadow: 0 1px 3px #151b4590 !important;
+}
+
+/* On state */
+#open-panel-button.active {
+    background: linear-gradient(263deg, #a9c1ff, #181e4800) !important;
+}
+
+/* Slide thumb to the right when active */
+#open-panel-button.active::before {
+    transform: translateX(20px) !important;
+}
+
+#toggle-logging-button {
+    background: #1b2031 !important;
+    color: #a2a8c4 !important;
+}
+
+#toggle-logging-button:hover {
+    background-color: #1a224f !important;
+    border: #343f85 1px solid !important;
+    color: #4250a1 !important;
+}
+ 
+
+/* version-label */
+ .version-label { 
+    color: #49a6c2 !important; 
+}
+
+.hue-rotate-container label{    
+    color: #49a6c2 !important;
+}
+
+/* close-panel-button */
+ #close-panel-button { 
+    color: #49a6c2 !important; 
+}
+ 
+
+
+/* ------------------------ Data selection modal --------------------- */  
+
+.data-selection-modal-content {
+    border: 1px solid #6479f2 !important; 
+}
+
+.data-selection-modal-content h3 {
+    color: #a2a8c4 !important;
+}
+
+.data-selection-modal-button {
+    background: linear-gradient(1deg, #090c1a, #222740, #11142a) !important;
+    border: 1px solid #49a6c2 !important;
+    color: #a2a8c4 !important;
+}

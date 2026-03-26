@@ -1,0 +1,27 @@
+/*--------------------------- chat input position fix  --------------------------------------*/
+ /* .Layout-sc-1xcs6mc-0.kklSOA.chat-input {
+    position: relative!important;
+    top: -5px !important;
+    left: -4px !important;
+}
+/*--------------------------- chat input position fix  --------------------------------------*/
+
+ /*
+ .chat-input-tray__open {
+    position: relative !important;
+    left: -333px !important; 
+}
+ 
+
+ /*------- сообщения внутри ------*/ 
+ /*
+.chat-replies-list__container {
+    max-height: 980px !important;
+    height: 480px !important; 
+}
+
+ 
+
+*/
+
+/*------------ стили перенесены в другой скрипт toggleemotepickerFFZ --------------------*/

@@ -1,0 +1,44 @@
+ 
+
+#sort-chatbanned-items-container {
+    width: calc(100% - 223px) !important;
+    position: absolute !important;
+    top: 60px !important;
+    left: 10px !important;
+    background-color: rgb(89, 51, 114) !important;
+    box-shadow: rgba(0, 0, 0, 0) 0px 15px 6px 0px !important;
+    z-index: 10002 !important;
+    padding: 5px !important;
+    border-radius: 8px 8px 0px 0px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(210, 202, 214) !important;
+    border-image: initial !important;  
+     color: white !important;
+}
+
+
+#sort-chatbanned-items-container button {  
+    flex-wrap: nowrap !important; /* Запрещаем перенос кнопок на следующую строку */
+    gap: 10px !important; /* Заменяем margin-right на gap для равномерных промежутков */
+}
+
+ 
+ #sortContainer, #sort-chatbanned-items-container {
+    justify-content: space-around !important;
+    align-items: stretch !important; 
+    overflow: hidden !important;
+    white-space: nowrap !important;
+} /*------ display: flex !important; УДАЛЯЕМ  flex !!!!! 
+ изза него кнопка "Go To Last Element ▼" была скрыта 
+ "для горизонтального расположения кнопок" -------*/
+
+
+
+.chat-filter-hidden {
+    display: none !important;
+}
+
+
+    
+    

@@ -1,0 +1,281 @@
+:root {
+    --modal-button-bg: #ae8cbf !important;
+    --modal-button-color: #110819 !important;
+    --modal-bg: linear-gradient(175deg, #0c0613 0%, rgb(103, 48, 134) 100%) !important;
+    --modal-button-hover-bg: #c19fd3 !important;
+    --modal-cancel-bg: #d32f2f !important;
+    --modal-cancel-hover-bg: #f44336 !important;
+    --modal-text: #110819 !important;
+    --modal-overlay-bg: rgba(0, 0, 0, 0.7) !important;
+    --modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    --modal-border: 3px solid  #c283f7 !important;
+}
+ 
+/* модалка настройки текст цвет*/ 
+
+#close-modal-settings-button {
+    background: #0c0613 !important;
+    border:1px solid #ae8cbf !important;
+     color: #ae8cbf !important; 
+}
+
+.notification-setting ,
+h3#settings-title {
+    color: #ae8cbf !important; 
+}
+
+
+.ios-switch input:checked + .slider {
+   background: #ae8cbf !important;
+}
+
+
+
+#control-7btvfz-center-x78x05x46-panel,
+.modal-content {
+    background: linear-gradient(175deg, #0c0613 0%, rgb(103 48 134) 100%) !important;
+    border: 1px solid rgb(186, 104, 200) !important;
+    box-shadow: rgba(106, 27, 154, 0.35) 0px 18px 20px 0px !important;
+}
+
+.hue-rotate-container label{    
+    color: #d4b3e4 !important;
+}
+
+.version-label {
+    color: #d4b3e4 !important;
+}
+
+.title {
+    color: rgb(174 140 191) !important;
+}
+
+#blocked-emotes-list,#banned-chat-list {
+    color: rgb(209, 196, 233) !important;
+    border: 1px solid rgb(218, 185, 235) !important;
+    box-shadow: #000000d9 -18px 69px 40px 0px inset !important;
+    background: linear-gradient(300deg, hsl(164.62deg 39.57% 23.98%) 12%, hsl(283deg 50.03% 16.17%) 46%, hsl(73.99deg 58.41% 25.71%) 119%) !important;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: rgb(174 140 191) !important;
+    border: 3px solid rgb(81 56 92) !important;
+}
+
+.list::-webkit-scrollbar-track {
+    background: rgb(75 35 98) !important;
+}
+
+
+ 
+
+li.blocked-item {
+    border-top: solid rgb(152, 114, 168) !important;
+}
+
+ 
+
+.blocked-item a {
+    color: rgb(225, 190, 231) !important;
+}
+
+.blocked-item .date {
+    color: rgb(209, 196, 233) !important;
+}
+
+.delete-button {
+    background: rgb(44 31 56) !important;
+    color: rgb(237, 231, 246) !important;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px !important;
+}
+
+.delete-button:hover {
+    background: linear-gradient(43deg, rgb(62 34 67) 0%, rgb(102 67 116) 56%, rgb(131 100 136) 98%, rgb(225, 190, 231) 100%) !important;
+}
+
+#search-input {
+    background: rgb(17 8 25) !important;
+    color: rgb(190, 182, 202) !important;
+    border: 1px solid #dab9eb !important;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 6px inset !important;
+}
+ 
+
+#search-button ,
+#settings-button {
+    background: rgb(174 140 191) !important;
+    color: rgb(17 8 25) !important;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px !important;
+}
+
+
+#add-button:hover,
+#settings-button:hover,
+#search-button :hover {
+    background: rgb(186, 104, 200) !important;
+    
+}
+
+.input-container #platform-select {
+    background: rgb(17 8 25) !important;
+    color: #dab9eb !important;
+    border: 1px solid #dab9eb !important;
+}
+ 
+
+#add-input {
+    background: rgb(17 8 25) !important;
+    border: 1px solid #dab9eb !important;
+}
+
+ 
+
+#add-button ,
+#settings-button ,  
+.close-modal-settings-button {  
+    background: rgb(174 140 191) !important;
+    color: rgb(17 8 25) !important;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button:hover,
+.button-container button:hover {
+    background: rgb(186, 104, 200) !important;
+}
+
+.button-container button {
+    background: #ae8cbf  ;
+    color: #110819 !important;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px !important;
+}
+ 
+.button-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.54), transparent) !important;
+    border: 1px solid rgb(174 140 191) !important;
+}
+
+button#blocked-emotes-list-button {
+   color: #110819 !important;
+}
+
+button#banned-chat-list-button {
+   color: #110819 !important;
+}
+
+#theme-select {
+    background: rgb(17 8 25) !important;
+    color: #dab9eb !important;
+    border: 1px solid rgb(218 185 235) !important;
+}
+ 
+
+#chart-modal {
+    background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.chart-container {
+    background: rgb(65 37 79) !important;
+    border: 2px solid rgb(174 140 191) !important;
+    color: rgb(237, 231, 246) !important;
+}
+
+#close-chart-button {
+    background: rgb(174 140 191) !important;
+    color: rgb(43 28 56) !important;
+}
+
+#close-chart-button:hover {
+    background: rgb(186, 104, 200) !important;
+}
+
+#close-panel-button  {
+    color: #d9b8ea !important; 
+}
+
+#sortContainer ,
+#sort-chatbanned-items-container {
+    background-color: rgb(90 59 109) !important;
+    border: 1px solid #d9b8ea !important;
+    color: rgb(218 185 235) !important;
+}
+
+
+#counter {
+    background-color: rgb(43 28 56) !important;
+    color: rgb(174 140 191) !important;
+    border: 3px solid rgb(174 140 191) !important;
+}
+
+#unblock-all-button, #block-all-button {
+    background: rgb(174 140 191) !important;
+    color: rgb(17 8 25) !important;
+}
+
+#unblock-all-button.active, #block-all-button.active {
+    background: rgb(54, 111, 68) !important;
+}
+
+#unblock-all-button:hover, #block-all-button:hover {
+    background: #dab9eb !important;
+}
+
+#open-panel-container {
+    background: rgb(79 37 104) !important;
+    border: 1px solid rgb(174 140 191) !important;
+    box-shadow: rgba(186, 104, 200, 0.34) 0px 4px 6px !important;
+}
+ 
+
+#open-panel-label {
+    color: #dab9eb !important;
+}
+
+#open-panel-button {
+    background-color: rgb(127 95 147) !important;
+}
+
+#open-panel-button::before {
+    background-color: rgb(79 37 104) !important;
+    transition: transform 0.3s !important;
+    box-shadow: rgba(186, 104, 200, 0.56) 0px 1px 3px !important;
+}
+
+#open-panel-button.active {
+    background-color: #dab9eb !important;
+}
+
+#close-chart-button:hover {
+    background: #8371a4 !important;
+}
+
+#toggle-logging-button {
+    background-color: #ae8cbf !important;
+    color: #110819 !important; 
+}
+
+#toggle-logging-button:hover {
+    background-color: #9572a7 !important;
+    border: #dab9eb solid 1px !important;
+}
+
+#toggle-logging-button.active {
+    background-color: #28633a !important;
+    color: #dab9eb !important;
+    border: #dab9eb solid 1px !important;
+}
+
+
+/* --------------- Modal selection  type import / export data --------------------------- */
+
+.data-selection-modal-content {
+    border: 1px solid #ba68c8 !important;
+    background: linear-gradient(175deg, #0c0613 0%, rgb(103, 48, 134) 100%) !important;
+}
+.data-selection-modal-content h3 {
+    color: #dabee0 !important;
+}
+.data-selection-modal-button.cancel { 
+    color: #dabee0 !important;
+}

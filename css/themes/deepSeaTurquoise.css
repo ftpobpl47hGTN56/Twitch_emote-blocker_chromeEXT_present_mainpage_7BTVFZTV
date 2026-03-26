@@ -1,0 +1,285 @@
+:root {
+    --modal-button-bg: #205151 !important;
+    --modal-button-color: #D6F0F5 !important;
+    --modal-bg: linear-gradient(187deg, #083030 0%, #29a99a 100%) !important;
+    --modal-button-hover-bg: #306161 !important;
+    --modal-cancel-bg: #d32f2f !important;
+    --modal-cancel-hover-bg: #f44336 !important;
+    --modal-text: #D6F0F5 !important;
+    --modal-overlay-bg: rgba(0, 0, 0, 0.7) !important;
+    --modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    --modal-border: 3px solid #29a99a !important;
+}
+ 
+#sortContainer ,
+#sort-chatbanned-items-container button {
+    color: #D6F0F5 !important;
+} 
+
+/*   ------------- для кнопки .notification-setting ------------- */
+.ios-switch .slider::before {
+    background: #318781 !important;
+}
+
+
+ .modal-content {
+    background: linear-gradient(0deg, #083030 0%, #29a99a 100%) !important;
+     border: 1px solid #29a99a !important;
+}
+
+
+#control-7btvfz-center-x78x05x46-panel {
+    background: linear-gradient(187deg, #083030 0%, #29a99a 100%) !important;
+    border: 1px solid #3ce3d1 !important;
+    box-shadow: 0 18px 29px 3px rgba(0, 10, 20, 0.8) !important;
+    color: #D6F0F5 !important;
+}
+
+.hue-rotate-container label{    
+    color: #0e3535 !important;
+}
+
+.version-label {
+    color: #0e3535 !important;
+}
+
+.title {
+    color: #a0d8e0 !important;
+}
+
+#blocked-emotes-list,#banned-chat-list  {
+    color: #B2D8E0 !important;
+    border: 1px solid #35dac8 !important;
+    background: -webkit-linear-gradient(53deg, hsla(265, 53%, 29%, 1) 10%, hsl(81.54deg 77.1% 16.89%) 100%) !important;
+    box-shadow: inset 0px 68px 28px 0px rgba(0, 10, 20, 0.85) !important;
+}
+ 
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #2AC3B2 !important;
+    border: 3px solid #205151 !important;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #205151 !important;
+}
+
+
+ 
+
+li.blocked-item {
+    border-top: 1px solid #205151 !important;
+}
+ 
+
+.blocked-item a {
+    color: #A8E1EA !important;
+}
+
+.blocked-item .date {
+    color: #B2D8E0 !important;
+}
+
+.delete-button {
+    background: #205151 !important;
+    color: #D6F0F5 !important;
+    box-shadow: 0 4px 8px rgba(0, 10, 20, 0.6) !important;
+}
+
+.delete-button:hover {
+    background: linear-gradient(135deg, #e9575746 0%, #1A5C6A 100%) !important;
+}
+
+#search-input {
+    background: #205151 !important;
+    color: #D6F0F5 !important;
+    border: 1px solid #2AC3B2 !important;
+    box-shadow: inset 0 4px 6px rgba(0, 10, 20, 0.6) !important;
+}
+ 
+
+#search-button ,
+#settings-button {
+    background: #205151 !important;
+    color: #D6F0F5 !important;
+    box-shadow: 0 4px 8px rgba(0, 10, 20, 0.6) !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button :hover {
+    background: #218c80 !important;
+}
+
+.input-container #platform-select  {
+    background: #205151 !important;
+    color: #D6F0F5 !important;
+    border: 1px solid #2AC3B2 !important;
+}
+ 
+
+#add-input {
+    background: #205151 !important;
+    color: #D6F0F5 !important;
+    border: 1px solid #2AC3B2 !important;
+}
+ 
+
+#add-button ,
+#settings-button ,  
+.close-modal-settings-button {  
+    background: #205151 !important;
+    color: #D6F0F5 !important;
+    box-shadow: 0 4px 8px rgba(0, 10, 20, 0.6) !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button:hover,
+.button-container button:hover {
+    background: #218c80 !important;
+    
+}
+
+#add-button ,
+#settings-button ,
+#search-button ,
+#close-modal-settings-button,
+#unblock-all-button, #block-all-button,
+.button-container button { 
+    border: 1px #24968a85 solid !important;
+}
+
+
+.button-container button {
+    background: #205151 ;
+    color: #D6F0F5 !important;
+    box-shadow: 0 4px 8px rgba(0, 10, 20, 0.6) !important;
+    border: 1px #24968a85 solid !important;
+}
+ 
+
+.button-container {
+    background: linear-gradient(360deg, rgb(18 75 70), #009688) !important; 
+    border: 1px solid rgb(42, 195, 178) !important;
+}
+
+button#blocked-emotes-list-button {
+   color: #D6F0F5 !important;
+}
+
+button#banned-chat-list-button {
+   color: #D6F0F5 !important;
+}
+
+
+#theme-select {
+    background: #205151 !important;
+    color: #D6F0F5 !important;
+    border: 1px solid #2AC3B2 !important;
+}
+ 
+
+#chart-modal {
+    background: rgba(0, 10, 20, 0.75) !important;
+}
+
+.chart-container {
+    background: #205151 !important;
+    border-color: rgb(214 240 245) !important;
+}
+
+#close-chart-button {
+    background: #0e3535 !important;
+    color: #D6F0F5 !important;
+}
+
+#close-chart-button:hover {
+    background: #218c80 !important;
+}
+ 
+#close-panel-button  {
+    color: #0e3535 !important; 
+}
+
+#sortContainer ,
+#sort-chatbanned-items-container {
+    background-color: #1c5756 !important;
+    color: #D6F0F5 !important;
+    border: 1px solid #2AC3B2 !important;
+    box-shadow: 0 15px 6px 0 rgba(0, 10, 20, 0) !important;
+}
+ 
+
+#counter {
+    background-color: #1c5756 !important;
+    color: #35dac8 !important;
+    border: 3px solid #35dac8 !important;
+}
+
+#unblock-all-button, #block-all-button {
+    background: #205151 !important;
+    color: #D6F0F5 !important;
+}
+
+#unblock-all-button.active, #block-all-button.active {
+    background: #114520 !important;
+}
+
+#unblock-all-button:hover, #block-all-button:hover {
+    background: #218c80 !important;
+}
+
+
+/* Container for the label and switch */
+#open-panel-container {
+    background: #205151 !important;
+    border: 1px solid #1db2a5 !important;
+    box-shadow: #58a9a2b3 0px 4px 10px 0px !important;
+}
+ 
+#open-panel-container:hover {
+      background: #306666 !important;  
+}
+
+/* Label (Open Panel/Close Panel text) */
+#open-panel-label {
+    color: #1db2a5 !important;
+}
+
+/* iOS-style switch (visual only) */
+#open-panel-button { 
+    background-color: #15332e !important;
+}
+
+/* Thumb (the sliding circle) */
+#open-panel-button::before {
+    background-color: #205151 !important;
+    transition: transform 0.3s ease !important; /* Smooth slide */
+     /* Subtle thumb shadow */
+}
+
+/* On state */
+#open-panel-button.active {
+    background-color: #1db2a5 !important; /* Matches border color for on state */
+}
+
+#toggle-logging-button {
+    background-color: rgb(32 81 81) !important;
+    color: rgb(210 236 241) !important; 
+}
+
+#toggle-logging-button:hover {
+    background-color: #1b6158 !important;
+    border: #29a99a 1px solid !important;
+}
+
+/* --------------- Modal selection  type import / export data --------------------------- */
+
+.data-selection-modal-content {
+    border: 1px solid #3ce3d1 !important;
+    background: linear-gradient(187deg, #083030 0%, #29a99a 100%) !important;
+}
+.data-selection-modal-content h3 {
+    color:rgb(151, 214, 211) !important;
+}

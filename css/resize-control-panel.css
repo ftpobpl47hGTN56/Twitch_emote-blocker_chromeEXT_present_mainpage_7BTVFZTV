@@ -1,0 +1,18 @@
+#control-7btvfz-center-x78x05x46-panel[style*="height: 50px"],
+#control-7btvfz-center-x78x05x46-panel[style*="height: 0px"],
+#control-7btvfz-center-x78x05x46-panel[style*="height: calc(50px)"],
+#control-7btvfz-center-x78x05x46-panel[style*="height: calc(0px)"] {
+    position: absolute;
+    right: 10px;
+    bottom: calc(10px * (var(--panel-height, 735) / 735));
+    width: 185px;
+    z-index: 10002 !important;
+    overflow-y: auto !important; 
+}
+
+#control-7btvfz-center-x78x05x46-panel {
+    cursor: default !important;
+    pointer-events: auto !important; 
+    user-select: none; 
+     z-index: 10002 !important;
+}

@@ -1,0 +1,19 @@
+
+
+#toggle-logging-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #907cad;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+}
+
+#toggle-logging-button:hover {
+    background-color: rgb(94, 79, 116);
+    border: 1px solid rgb(29, 173, 101);
+}
+
+#toggle-logging-button.active {
+    background-color: rgb(58, 98, 124)  !important;
+}

@@ -1,0 +1,249 @@
+
+/* ---------------------  panelSettings.css-------------------------- */
+.settings-container {
+    width: 210px;
+}
+
+
+/*  хваталка для перемещения окна настроек */
+.drag-hwatalka-zahwata-modal-settings {
+    width: 99%;
+    height: 99%;
+    z-index: -3;
+    position: absolute;
+    top: 4px;
+    left: 1px;
+}
+
+#settings-button {
+    position: relative;
+    z-index: 10002;
+    /* top: 90%; */
+    left: 0%; 
+    display: flex;
+    justify-content: center;
+}
+
+#settings-modal {
+    position: absolute;
+    width: 1103px;
+    max-width: 1104px;
+    height: 823px;
+    max-height: 1155px;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0);
+}
+ 
+
+h3#settings-title {
+    width: 190px;
+    font-size: 16px;
+    color: rgb(18 38 41);
+    font-weight: bold;
+}
+
+.drag-handle {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    cursor: grab;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.drag-handle:active {
+    cursor: grabbing;
+}
+
+
+.close-modal-settings-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer; 
+    width: 95px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: #a2eeee solid 1px;
+    background: #907cad;
+    color: #22182f;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px;
+    display: flex;
+    justify-content: center;
+     z-index: 10002;
+}
+
+
+/* Стили для модального окна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #020e0c75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10002;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Контент модального окна */
+.modal-content {
+    width: 100%;
+    max-width: 90%;
+    height: 93%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+    z-index: 10002;
+    transform: scale(0.3);
+    opacity: 0;
+    background: linear-gradient(360deg, rgb(46 33 59) 0%, rgb(20 48 71) 25%, rgb(23 50 57) 59%, rgb(68, 33, 92) 79%, rgb(27 22 37) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    animation: auto ease 0s 1 normal none running none;
+}
+
+/* Состояние при открытии модального окна */
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    border: #dab9eb solid 1px;
+}
+
+
+.modal.open .modal-content {
+    animation: modalOpen 0.5s ease-out forwards;
+    box-shadow: rgb(0 0 0 / 59%) 0px 7px 18px 15px;
+}
+
+.modal.closing .modal-content {
+    animation: modalClose 0.5s ease-in forwards; /* Увеличена длительность для закрытия */
+}
+
+@keyframes modalOpen {
+    0% {
+        transform: scale(0.3); /* Начинается с сильного уменьшения */
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.0); /* Заметное "перепрыгивание" */
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1); /* Конечный размер */
+        opacity: 1;
+    }
+}
+
+@keyframes modalClose {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.3); /* Уменьшение до того же масштаба, что при старте */
+        opacity: 0;
+    }
+}
+
+
+/*  текст название для кнопки .notification-setting */
+
+.notification-setting {
+    width: 190px;
+    font-size: 16px;
+    color: rgb(18 38 41);
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 18px 18px;
+    transition: all 0.3s ease;
+}
+ 
+.notification-setting:hover {
+    background-color: #a7f0ea59;
+    color: #122629;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+/* input ввод поля ввода */
+
+input#emoji-spam-limit-input {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #7ec574;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #1b4948;
+    color: #5dc1bf;
+}
+
+
+
+
+
+
+
+
+
+/*---------------- resize   modall window settings ----------------------------*/
+
+ 
+
+/* Элемент для изменения размера модального окна настроек */
+#settings-modal .modal-resize-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px; 
+    cursor: nwse-resize;
+    border-radius: 8px;
+    z-index: 10003;
+}
+
+#settings-modal .modal-resize-handle:hover {
+    background: #6cfff3ab;
+}
+/* -------- прячем контент для сжатия --------- */
+.modal-content {
+    margin: 10px 0;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*---------- antispam mention @ ----------*/
+
+ 
+
+/* ------------------- twitch chat widh  ------------------ */
+.channel-root__right-column.channel-root__right-column--expanded {
+    width: 0rem;
+}
+
+/*---- kick with height emote --------------*/
+
+.absolute.left-0.top-1\/2.size-\[calc\(var\(--chatroom-font-size\)\*28\/13\)\].-translate-y-1\/2 {
+    width: 60px;
+    height: 60px;
+}
+
+

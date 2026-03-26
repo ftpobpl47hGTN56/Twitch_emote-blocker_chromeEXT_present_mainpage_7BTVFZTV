@@ -1,0 +1,287 @@
+:root {
+    --modal-button-bg: #3d8eb9 !important;
+    --modal-button-color: #011d59 !important;
+    --modal-bg: -webkit-linear-gradient(90deg, rgb(0, 23, 89) 0%, #228982 100%) !important;
+    --modal-button-hover-bg: #4a9ed1 !important;
+    --modal-cancel-bg: #d32f2f !important;
+    --modal-cancel-hover-bg: #f44336 !important;
+    --modal-text: #011d59 !important;
+    --modal-overlay-bg: rgba(0, 0, 0, 0.7) !important;
+    --modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    --modal-border: 3px solid #3d8eb9 !important;
+}
+ 
+ 
+#add-button ,
+#settings-button ,
+#search-button ,
+#close-modal-settings-button ,
+#unblock-all-button, #block-all-button,
+.button-container button { 
+    border: 1px solid #b2e3f8  !important;
+}
+
+#control-7btvfz-center-x78x05x46-panel,
+.modal-content {
+    background: -webkit-linear-gradient(90deg, rgb(0, 23, 89) 0%, #228982 100%) !important;
+    border: 1px solid #296bc0 !important;
+    box-shadow: rgb(0, 0, 0) 0px 18px 29px 3px !important;
+    color: #e0f2fa !important;
+}
+.notification-setting {
+    color: #b3f4fd !important;
+}
+
+.hue-rotate-container label{    
+    color: #4fb3c8 !important;
+}
+
+.version-label {
+    color: #4fb3c8 !important;
+}
+
+.title {
+    color: #042251 !important;
+}
+
+#blocked-emotes-list,#banned-chat-list  {
+    color: rgb(182, 202, 211) !important;
+    box-shadow: rgba(0, 0, 0, 0.85) -18px 69px 40px 0px inset !important; 
+    border: 1px solid #4fb3c8 !important;
+    border-image: initial !important;
+    background: linear-gradient(36deg, rgb(20 34 72) 20%, rgb(32 123 142) 100%) !important;
+}
+
+
+
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #4fb3c8 !important;
+    border: 3px solid #152d70 !important;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #2a69ac !important;
+    
+}
+
+ 
+
+li.blocked-item {
+    border-top: solid #2a69ac !important;
+}
+ 
+
+.new-item {
+    background-color: #4d6410d1 !important;
+    color: #d1e7f1 !important;
+}
+
+.blocked-item a {
+    color: #bfcda6 !important;
+}
+
+.blocked-item .date {
+    color: #c0e0f0 !important;
+}
+
+.delete-button {
+    background: #022258 !important;
+    color: #e0f2fa !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+.delete-button:hover {
+    background: linear-gradient(135deg, rgb(64, 124, 255) 0%, rgb(0, 3, 179) 56%, rgb(64, 93, 255) 98%, rgb(107, 154, 255) 100%) !important;
+}
+
+#search-input {
+    background: #2a69ac !important;
+    color: #e0f2fa !important;
+    border: 1px solid #4fb3c8 !important;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.6) !important;
+}
+ 
+
+#search-button ,
+#settings-button {
+    background: #3d8eb9 !important;
+    color: #011d59 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button :hover {
+    background: #4fb3c8 !important;
+}
+
+.input-container #platform-select  {
+    background: #2a69ac !important;
+    color: #042251 !important;
+    border: 1px solid #4fb3c8 !important;
+}
+ 
+
+#add-input {
+    background: #2a69ac !important;
+    color: #e0f2fa !important;
+    border: 1px solid #4fb3c8 !important;
+}
+ 
+
+#add-button ,
+#settings-button ,  
+.close-modal-settings-button {  
+    background: #3d8eb9 !important;
+    color: #011d59 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button:hover,
+.button-container button:hover {
+    background: #4fb3c8 !important;
+}
+
+.button-container button {
+    background: #3d8eb9  ;
+    color: #011d59 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+ 
+
+.button-container {
+    background: linear-gradient(180deg, #0000008a, transparent) !important;
+    border: 1px solid #4fb3c8 !important;
+}
+
+#theme-select {
+    background: #2a69ac !important;
+    color: #042251 !important;
+    border: 1px solid #4fb3c8 !important;
+}
+ 
+
+#chart-modal {
+    background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.chart-container {
+    background: #244261 !important;
+    border: 2px solid #4690eb !important;
+    color: rgb(224, 242, 250) !important;
+}
+
+#close-chart-button {
+    background: #3d8eb9 !important;
+    color: #011d59 !important;
+}
+
+#close-chart-button:hover {
+    background: #4fb3c8 !important;
+}
+ 
+#close-panel-button  {
+    color: #4fb3c8 !important; 
+}
+#sortContainer ,
+#sort-chatbanned-items-container {
+    background-color: #042251 !important;
+    border: 1px solid #4fb3c8 !important;
+    color: #e0f2fa !important;
+}
+ 
+#sortContainer ,
+#sort-chatbanned-items-container button {
+    color: #4fb3c8 !important;
+}
+
+#counter {
+    background-color: #3d8eb9 !important;
+    color: #011d59 !important;
+    border: 3px solid #011d59 !important;
+}
+
+#unblock-all-button, #block-all-button {
+    background: #3d8eb9 !important;
+    color: #011d59 !important;
+}
+
+#unblock-all-button.active, #block-all-button.active {
+    background: #1b6333 !important;
+}
+
+#unblock-all-button:hover, #block-all-button:hover {
+    background: #4fb3c8 !important;
+}
+ 
+
+button#blocked-emotes-list-button {
+    color: #042251  !important;
+}
+
+button#banned-chat-list-button {
+   color: #042251  !important;
+}
+
+
+/* Container for the label and switch */
+#open-panel-container {
+    background: #042251 !important;
+    border: 1px solid #0099fe !important;
+    box-shadow: #1f69ff70 0px 4px 10px 0px !important;
+}
+ 
+#open-panel-container:hover {
+      background: #2e4980 !important;  
+}
+
+/* Label (Open Panel/Close Panel text) */
+#open-panel-label {
+    color: #0099fe !important;
+}
+
+/* iOS-style switch (visual only) */
+#open-panel-button {
+    background-color: #1f69ff !important;
+}
+
+/* Thumb (the sliding circle) */
+#open-panel-button::before {
+    background-color: #0d296d !important;
+    transition: transform 0.3s ease !important; /* Smooth slide */
+     /* Subtle thumb shadow */
+}
+
+/* On state */
+#open-panel-button.active {
+    background-color: #0099fe !important; /* Matches border color for on state */
+}
+
+
+#toggle-logging-button {
+    background-color: #3d8eb9 !important;
+    color: #011d59 !important;
+    transition: background-color 0.3s !important;
+}
+
+#toggle-logging-button:hover {
+    background-color: #1c5488 !important;
+    border: #3d8eb9 solid 1px !important;
+}
+
+/* --------------- Modal selection  type import / export data --------------------------- */
+
+.data-selection-modal-content {
+    border: 1px solid #296bc0 !important;
+    background: -webkit-linear-gradient(90deg, rgb(0, 23, 89) 0%, #228982 100%) !important;
+    background: linear-gradient(90deg, rgb(0, 23, 89) 0%, #228982 100%) !important;
+}
+.data-selection-modal-content h3 {
+    color: #e0f2fa !important;
+}   
+.data-selection-modal-button.cancel { 
+    color: #0099fe !important; 
+}

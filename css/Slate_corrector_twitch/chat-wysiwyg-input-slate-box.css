@@ -1,0 +1,65 @@
+/*---- input__editor Container -------- */
+
+.chat-wysiwyg-input__editor {
+     width: 253px  !important;
+     left:  0px  !important;
+}
+
+
+/*---- slate twitch Container -------- */
+.chat-wysiwyg-input-box {
+     width: 324px  !important;  
+     border-radius: 8px !important; 
+}
+
+ 
+.chat-wysiwyg-input__editor {
+    max-height: calc(97.5px + 2rem) !important;
+    transition: max-height 0.3s ease !important;
+    overflow: hidden !important;
+}
+
+.chat-wysiwyg-input__editor.focus-visible {
+    max-height: 550px !important;
+}
+
+.chat-wysiwyg-input__editor.empty {
+    max-height: calc(97.5px + 2rem) !important;
+}
+
+.chat-wysiwyg-input__box {
+    max-height: 550px !important; 
+}
+
+.chat-wysiwyg-input__box  { 
+    border: 2px solid #24635d !important; 
+}
+
+.chat-wysiwyg-input__editor {
+     background: #1c2b2b!important;
+     border-radius: 8px !important;
+     border: 2px solid #9bdcad45 !important;
+}
+ textarea.ScInputBase-sc-vu7u7d-0 {
+     background: #1c2b2b !important;   
+     border: 2px solid #24635d !important;
+     border-radius: 10px !important;
+} 
+
+
+.chat-wysiwyg-input-box {
+     background: #1c2b2b !important;    
+     border: 2px solid #754e94 !important;  
+     border-radius: 10px !important;
+}
+
+
+
+/*
+.chat-wysiwyg-input__editor {
+    display: none !important;
+}
+
+.chat-wysiwyg-input__placeholder {
+   display: none !important;
+} */

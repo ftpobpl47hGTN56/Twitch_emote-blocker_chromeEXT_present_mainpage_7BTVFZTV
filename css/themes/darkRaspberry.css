@@ -1,0 +1,312 @@
+:root {
+    --modal-button-bg: #a64a7a !important;
+    --modal-button-color: #2e1128 !important;
+    --modal-bg: linear-gradient(5deg, #000000, #10050e, #5f1a3cfc) !important;
+    --modal-button-hover-bg: #b85c8a !important;
+    --modal-cancel-bg: #d32f2f !important;
+    --modal-cancel-hover-bg: #f44336 !important;
+    --modal-text: #f4c7c3 !important;
+    --modal-overlay-bg: rgba(0, 0, 0, 0.7) !important;
+    --modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    --modal-border: 3px solid             #c468a8 !important;
+}
+ 
+.notification-setting {
+    color: #d47a9a !important;
+}
+
+.ios-switch input:checked + .slider {
+    background: #8b285a !important;
+}
+
+.ios-switch input:checked + .slider::before {
+    background: #d47a9a !important;
+}
+h3#settings-title {
+    display: flex !important;
+    align-items: flex-start !important;
+    color: #d47a9a !important;
+}
+
+#close-modal-settings-button {
+    background: #10050e !important;
+    border:1px solid #d47a9a !important;
+    color: #d47a9a !important;
+}
+#sortContainer ,
+#sort-chatbanned-items-container button {
+    color: #e497b2 !important;
+}
+/* ----------------------- Основной контейнер панели управления ------------- */
+#control-7btvfz-center-x78x05x46-panel,
+.modal-content {
+    background: linear-gradient(5deg, #000000, #10050e, #5f1a3cfc) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid #c75590 !important;
+    box-shadow: 0px 10px 9px 6px rgb(0 0 0 / 86%) !important;
+}
+ 
+.hue-rotate-container label{    
+    color: #D47A9A !important;
+}
+ 
+/* ----------------------- Версия расширения ------------- */
+.version-label { 
+    color: #D47A9A !important; 
+}
+
+/* ----------------------- Заголовок ------------- */
+.title {
+    color: #D47A9A !important;
+}
+
+/* ----------------------- Список заблокированных элементов ------------- */
+#blocked-emotes-list,#banned-chat-list  { 
+    box-shadow: rgba(0, 0, 0, 0.67) 0px 100px 41px 0px inset !important;
+    color: rgb(255 255 255) !important;
+    border: 1px solid rgb(166, 74, 122) !important;
+    background: linear-gradient(45deg, #441a4f 19%, #0e443b 46%, #25807c 85%) !important;
+}
+ 
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #A64A7A !important; 
+    border: 3px solid #5C2A4A !important; 
+}
+
+.list::-webkit-scrollbar-track {
+    background: #5C2A4A !important; 
+}
+
+/* ----------------------- Элемент списка ------------- */
+.blocked-item { 
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+
+
+ 
+
+li.blocked-item { 
+    border-top: solid #511835 !important;
+}
+ 
+
+.blocked-item a {
+    color: #D47A9A !important;
+}
+
+.blocked-item .date {
+    color: #D47A9A !important;
+}
+
+/* ----------------------- Кнопка удаления ------------- */
+.delete-button {
+    background: rgb(122, 31, 58) !important;
+    color: rgb(212 122 154) !important;
+}
+
+.delete-button:hover {
+    background: #5C2A4A !important;
+}
+ 
+
+/* ----------------------- Поле поиска ------------- */
+#search-input {
+    background: rgb(44 16 39) !important; 
+    color: rgb(212, 122, 154) !important; 
+    border: 1px solid rgb(166, 74, 122) !important; 
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 6px inset !important;
+}
+
+  
+
+/* ----------------------- Кнопка поиска ------------- */
+#search-button ,
+#settings-button {
+    background: rgb(166, 74, 122) !important;
+    color: rgb(44 16 39) !important; 
+}
+
+
+#add-button:hover,
+#settings-button:hover,
+#search-button :hover {
+    background: #D47A9A !important;
+}
+
+/* ----------------------- Селектор платформы ------------- */
+.input-container #platform-select  {
+    background: rgb(44 16 39) !important;
+    color: rgb(212, 122, 154) !important;
+    border: 1px solid rgb(166, 74, 122) !important;
+}
+ 
+
+/* ----------------------- Поле ввода для добавления ------------- */
+#add-input {
+    background: rgb(44 16 39) !important;
+    color: rgb(212, 122, 154) !important;
+    border: 1px solid rgb(166, 74, 122) !important; 
+}
+ 
+
+/* ----------------------- Кнопка добавления ------------- */
+
+#add-button ,
+#settings-button ,  
+.close-modal-settings-button {  
+    background: rgb(166, 74, 122) !important;
+    color: rgb(44 16 39) !important; 
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button:hover,
+.button-container button:hover {
+    background: #D47A9A !important;
+}
+ 
+button#blocked-emotes-list-button {
+    color: rgb(44 16 39) !important;
+}
+
+button#banned-chat-list-button {
+    color: rgb(44 16 39) !important;
+}
+
+
+/* ----------------------- Все кнопки в button-container ------------- */
+.button-container button { 
+    background: #a64a7a ;
+    color: #2e1128 !important; 
+}
+ 
+ 
+.button-container {
+    background: linear-gradient(360deg, #65365282, #08050c7d) !important;
+    border: 1px solid #a64a7a !important;
+}
+
+
+/* ----------------------- Селектор тем ------------- */
+#theme-select {
+    background: rgb(44 16 39) !important;
+    color: rgb(212, 122, 154) !important;
+    border: 1px solid #a64a7a !important;
+}
+ 
+
+/* ----------------------- Модальное окно графика ------------- */
+#chart-modal { 
+    background: rgba(0, 0, 0, 0.75) !important; 
+}
+
+/* ----------------------- Контейнер графика ------------- */
+.chart-container {
+    background: #5C2A4A !important; 
+    color: #D47A9A !important;
+}
+
+/* ----------------------- Кнопка закрытия графика ------------- */
+#close-chart-button { 
+    background: #A64A7A !important;
+    color: #FFFFFF !important; 
+}
+
+#close-chart-button:hover {
+    background: #D47A9A !important;
+}
+ 
+#close-panel-button  {
+    color: #c2708d !important; 
+}
+
+/* ----------------------- Контейнер сортировки ------------- */
+#sortContainer ,
+#sort-chatbanned-items-container { 
+    background-color: #3B1A2D !important; 
+    border: 1px solid #A64A7A !important;
+    box-shadow: rgba(0, 0, 0, 0) 0px 15px 6px 0px !important; 
+    color: #D47A9A !important; 
+}
+
+
+/* ----------------------- Счетчик ------------- */
+#counter {
+    background-color: #3e1e39 !important;
+    color: rgb(166 74 122) !important;
+    border: 3px solid rgb(166 74 122) !important;
+}
+
+/* ----------------------- Стили для кнопок Enable/Disable ------------- */
+#unblock-all-button, #block-all-button {
+    background: #a64a7a !important;
+    color: #2c1027 !important; 
+    transition: background 0.3s ease !important;
+}
+
+#unblock-all-button.active, #block-all-button.active {
+    background: #2c1027 !important;
+    color: #c271a1 !important;
+}
+#unblock-all-button:hover, #block-all-button:hover {
+    background: #D47A9A !important;
+     color: #2c1027 !important;
+}
+ 
+/* ----------------------- Container for the label and switch ------------- */
+#open-panel-container { 
+    background: #3B1A2D !important; /* ----------------------- Matches button-container, add-button, etc. ------------- */
+    border: 1px solid #D47A9A !important; 
+}
+ 
+/* ----------------------- Label (Open Panel/Close Panel text) ------------- */
+#open-panel-label {
+    color: #D47A9A !important;  
+    user-select: none !important; /* ----------------------- Prevent text selection ------------- */
+}
+
+/* ----------------------- iOS-style switch (visual only) ------------- */
+#open-panel-button { 
+    background-color: #734760 !important;  
+}
+
+/* ----------------------- Thumb (the sliding circle) ------------- */
+#open-panel-button::before { 
+    background-color: #3B1A2D !important; 
+    transition: transform 0.3s ease !important; /* ----------------------- Smooth slide ------------- */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.562) !important; /* ----------------------- Subtle thumb shadow ------------- */
+}
+
+/* ----------------------- On state ------------- */
+#open-panel-button.active {
+    background-color: #D47A9A !important; /* ----------------------- Matches border color for on state ------------- */
+}
+
+/* ----------------------- Slide thumb to the right when active ------------- */
+#open-panel-button.active::before {
+    transform: translateX(20px) !important; /* ----------------------- Slide right (51 - 27 - 2*2 = 20px) ------------- */
+}
+
+#toggle-logging-button {
+    background-color: rgb(166 74 122) !important;
+    color: rgb(44 16 39) !important; 
+}
+
+#toggle-logging-button:hover {
+    background-color: #6e2c43 !important;
+    border: #D47A9A 1px solid !important;
+    color: #f3aac3 !important;
+}
+
+
+/* ----------------------- --------------- Modal selection  type import / export data --------------------------- ------------- */
+
+.data-selection-modal-content {
+    border: 1px solid #c75590 !important;
+    background: linear-gradient(5deg, #000000, #10050e, #5f1a3cfc) !important;
+}
+.data-selection-modal-content h3 {
+    color:rgb(214, 123, 173) !important;
+}

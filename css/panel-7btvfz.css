@@ -1,0 +1,366 @@
+
+/* ---------- стили утилитарных кнопкок  ----------- */
+
+ .ios-switch input:checked + .slider {
+    background: #2b695d;
+}
+.ios-switch .slider:before {
+     background: #b59cce;
+}
+
+.modal-content {
+    background: linear-gradient(179deg, #43205a 44%, #837a94 94%); 
+    border-color: #b59cce; 
+}
+.notification-setting ,
+h3#settings-title{
+     color: #b59ccd;
+}
+#close-modal-settings-button{
+    border: 1px solid #c8b4db;
+}
+
+  
+#settings-button {
+    background: #907cad;
+    color: #22182f; 
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px; 
+}
+
+.button-container button ,
+#add-button ,
+#search-button ,
+#settings-button {
+     color: #22182f;
+}
+
+#settings-button:hover  ,
+#search-button:hover {
+  background: #907cad
+}
+
+#add-button ,
+#search-button  {
+    background: #907cad;
+    color: #22182f; 
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px; 
+}     
+
+#add-input , 
+#search-input {
+     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.6) !important;
+}
+/* ----------   стили утилитарных кнопкок  ----------- */
+
+ 
+
+/* здесь   менять ширину и высоту панели */
+#control-7btvfz-center-x78x05x46-panel { 
+    background: -webkit-linear-gradient(270deg, #e4c83a 0%, #e58415 25%, #813b3b 59%, #43205a 79%, #837a94 100%);
+    border: 1px solid rgb(204, 204, 204); 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; 
+}
+ 
+
+#sortContainer  { 
+    background-color: rgb(89, 51, 114); 
+    border: 1px solid #d2cad6;
+    box-shadow: rgba(0, 0, 0, 0) 0px 15px 6px 0px  !important; 
+    color: white;
+}
+
+ 
+
+.version-label { 
+    color: rgb(213, 205, 216); 
+}
+
+
+#search-input:focus { 
+    border-color: rgb(144, 124, 173);
+}
+
+input#add-input {
+    color: aquamarine !important;
+}
+
+input#search-input {
+    color: aquamarine !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button:hover,
+ #settings-button:hover {   
+    background: #b69dcf;
+ }
+
+button#blocked-emotes-list-button {
+     color: rgb(255, 255, 255) !important;
+}
+
+button#banned-chat-list-button {
+   color: rgb(255, 255, 255) !important;
+}
+
+ 
+.button-container button:hover {
+    background: #b69dcf  !important; 
+    color: rgb(39, 19, 58)   !important;
+}
+
+#platform-select { 
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207); 
+}
+
+#platform-select:focus {
+    outline: none;
+    border-color: rgb(144, 124, 173);
+}
+
+#add-button:hover {
+    background: rgb(122, 91, 154);
+}
+
+#add-input:focus { 
+    border-color: rgb(144, 124, 173);
+}
+ 
+
+#add-input {
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207); 
+}
+
+#add-button {
+    background: rgb(144, 124, 173);  
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px; 
+}
+
+ 
+
+#search-input {
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207); 
+}
+
+#search-button {
+    background: rgb(144, 124, 173);  
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px; 
+}
+
+.exact-match {
+    background-color: rgb(156, 87, 177) !important;
+}
+
+.exact-match-text {
+    background-color: rgb(255, 255, 0) !important;
+    color: rgb(0, 0, 0) !important; 
+}
+
+.input-container #platform-select {
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207); 
+}
+
+.button-container { 
+    background: linear-gradient(rgb(101, 58, 13), transparent, rgb(68, 33, 90)); 
+    border: 1px solid #d2cad6; 
+}
+ 
+
+.button-container button { 
+    background: rgb(144, 124, 173);
+    color: rgb(255, 255, 255); 
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px; 
+}
+ 
+
+#theme-select { 
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207); 
+}
+
+#theme-select:focus { 
+    border-color: rgb(144, 124, 173);
+}
+
+
+.title { 
+    color: rgb(42, 30, 56); 
+}
+ 
+
+#counter { 
+    background: rgb(182, 157, 207);
+    color: rgb(76, 42, 94);
+    border: 3px solid rgb(76, 42, 94); 
+}
+
+#unblock-all-button, #block-all-button {
+    background: rgb(144, 124, 173);
+    color: rgb(255, 255, 255); 
+}
+
+#unblock-all-button.active, #block-all-button.active {
+    background: rgb(27, 99, 51);
+}
+
+#unblock-all-button:hover, #block-all-button:hover {
+    background: rgb(122, 91, 154); 
+}
+
+#open-panel-container { 
+    background: rgb(85, 61, 110);
+    border: 1px solid rgb(182, 157, 207); 
+    box-shadow: rgba(152, 95, 189, 0.5) 0px 5px 9px; 
+}
+
+#open-panel-label {
+    color: rgb(182, 157, 207); 
+}
+
+#open-panel-button { 
+    background-color: rgb(137, 111, 159); 
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px inset; 
+}
+
+#open-panel-button::before { 
+    background-color: rgb(86, 63, 110); 
+    box-shadow: rgb(93, 75, 124) 0px 1px 3px;
+}
+
+#open-panel-button.active {
+    background-color: rgb(182, 157, 207);
+} 
+
+#toggle-logging-button { 
+    background-color: #907cad;
+    color: rgb(255, 255, 255); 
+}
+
+#toggle-logging-button:hover {
+    background-color: rgb(94, 79, 116);
+    border: 1px solid rgb(29, 173, 101);
+}
+
+#toggle-logging-button.active {
+    background-color: rgb(58, 98, 124);
+}
+
+#control-7btvfz-center-x78x05x46-panel button:not(#sortContainer button):hover { 
+    background-color: rgba(26, 110, 71, 0.69) !important;
+    color: rgb(182, 250, 217) !important;
+    border: 1px solid rgb(182, 250, 217) !important; 
+}
+ 
+
+#theme-select:focus,
+#platform-select:focus, 
+#add-input:focus,
+#search-input:focus, 
+#add-input:focus {
+    background: #1c3b3ff3 !important;
+    color: #b6fad9!important;
+    border: 1px solid #b6fad9 !important;
+    transition: background-color 0.3s !important;
+}
+
+.keyword-item:hover .close-panel-container:hover #theme-select:hover, 
+#platform-select:hover,
+#add-input:hover, 
+#search-input:hover, 
+#add-input:hover,
+#sortContainer button:hover { 
+    color: #b6fad9!important; 
+    transition: background-color 0.3s !important;
+}
+
+#sortContainer button:hover {
+    color: rgb(165, 255, 112) !important;
+    transition: background-color 0.3s !important;
+}
+
+#control-7btvfz-center-x78x05x46-panel a:hover {
+    color: rgb(223, 167, 94) !important;
+    transition: background-color 0.3s !important;
+}
+
+
+
+
+/*  -------------     filter: hue-rotate(345deg); ---------------------- */
+ /* Контейнер для ползунка */
+.hue-rotate-container label { 
+    color: var(--text-color, #ffffff); 
+}
+
+/* Стили для ползунка */
+.hue-rotate-container input[type="range"] { 
+    background: linear-gradient(90deg, #757575, #424242);  
+}
+ 
+
+#hue-rotate-value {  
+    background: #0c7036;
+}
+
+.hue-rotate-container input[type="range"]::-webkit-slider-runnable-track { 
+    background: linear-gradient(90deg, #757575, #424242); /* Тот же градиент для трека */ 
+}
+
+/* Стили для бегунка в Chrome, Safari, Edge */
+.hue-rotate-container input[type="range"]::-webkit-slider-thumb { 
+    background: #0c7036; /* Бирюзовый акцентный цвет из палитры Material Design */ 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);   
+}
+
+/* Эффект при наведении */
+.hue-rotate-container input[type="range"]:hover::-webkit-slider-thumb {
+    transform: scale(1.15); /* Лёгкое увеличение */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22); /* Усиленная тень */
+}
+
+/* Эффект при активации */
+.hue-rotate-container input[type="range"]:active::-webkit-slider-thumb {
+    background: #018786; /* Более тёмный бирюзовый при нажатии */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Меньшая тень при нажатии */
+}
+
+/* Стили для трека в Firefox */
+.hue-rotate-container input[type="range"]::-moz-range-track { 
+    background: linear-gradient(90deg, #757575, #424242); /* Тот же градиент для Firefox */ 
+}
+
+/* Стили для бегунка в Firefox */
+.hue-rotate-container input[type="range"]::-moz-range-thumb { 
+    background: #03DAC6; /* Бирюзовый акцент */
+    border: 2px solid #ffffff; /* Белая обводка */ 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+     
+}
+
+/* Эффекты наведения и активации для Firefox */
+.hue-rotate-container input[type="range"]:hover::-moz-range-thumb {
+    transform: scale(1.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22);
+}
+
+.hue-rotate-container input[type="range"]:active::-moz-range-thumb {
+    background: #018786; /* Более тёмный оттенок */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для значения (градусов) */
+.hue-rotate-container span { 
+    color: #ffffff;
+    background: #03DAC6; /* Бирюзовый фон для акцента */ 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Лёгкая тень */
+}
+

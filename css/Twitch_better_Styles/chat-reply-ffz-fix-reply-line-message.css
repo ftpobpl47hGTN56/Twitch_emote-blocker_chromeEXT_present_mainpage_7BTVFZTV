@@ -1,0 +1,49 @@
+/*======== разворот при наведении и сворачивание для реплай сообщения что бы не засорять чат==========*/
+ /*---- twitch_main_Styles_but_Better.css---*/
+
+.ffz--fix-reply-line {
+    max-height: 43px !important; /* Высота по умолчанию для свёрнутого состояния */
+    overflow: hidden !important; /* Скрываем содержимое, превышающее max-height */
+    transition: max-height 0.3s ease !important; /* Плавная анимация раскрытия */
+}
+
+.ffz--fix-reply-line:hover {
+    max-height: 200px !important; /* Максимальная высота при раскрытии (достаточно большая, чтобы вместить весь контент) */
+}
+/*---- полупрозрачность маска для реплаев --------*/
+.ffz--fix-reply-line {
+    mask-image: linear-gradient(to bottom, black 60%, #ad282800 100%) !important;
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, #cb202000 100%) !important;
+}
+/*------- FFZ FIX REPLY Реплай стиль контейнер раскрывается при навдении ------*/
+p.CoreText-sc-1txzju1-0.iWlGez {
+    max-width: 280px !important;
+    width: 270px !important;
+}
+p.CoreText-sc-1txzju1-0.iWlGez {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow: visible !important;
+    background: #1a413d !important;  
+    border: solid 2px !important;  
+    border-radius: 12px !important;  
+    padding: 5px !important;  
+}
+
+/*============= .ffz--fix-reply button ==============*/
+.ffz--hover-actions.ffz-action-data.tw-mg-r-05 {
+    z-index: 555555 !important;
+} 
+/*============= .ffz--fix-reply button ==============*/
+
+strong.chat-line__message-mention.ffz--pointer-events {
+    color: #9575a9   !important;
+    background: #0d201e   !important;
+    border-radius: 7px   !important;
+    padding: 4px   !important;
+    border: 1px solid   !important;
+}
+
+span.text-fragment {
+    color: #cacaca   !important;
+}

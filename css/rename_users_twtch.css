@@ -1,0 +1,37 @@
+/* css/rename_users_twtch.css */
+.rename-nick-button,
+.delete-nick-button {
+    background: #3d5757 !important;
+    font-size: 16px !important;
+    transition: color 0.2s, background-color 0.2s !important;
+    padding: 4px !important;
+    border-radius: 8px !important;
+     cursor: default !important; /* Отключаем курсор перетаскивания */ 
+}
+
+.rename-nick-button:hover,
+.delete-nick-button:hover {
+    color: #ffffff !important;
+    background-color: #a66bff9d !important;
+     cursor: default !important; /* Отключаем курсор перетаскивания */ 
+}
+
+.rename-nick-input {
+    padding: 4px !important;
+    border: 1px solid #9147ff !important;
+    border-radius: 4px !important;
+    background-color: #0e1a1a !important;
+    color: #ffffff !important;
+    width: 150px !important;
+     cursor: default !important; /* Отключаем курсор перетаскивания */ 
+}
+
+.rename-nick-input:focus {
+    outline: none !important;
+    border-color: #ffffff !important;
+     cursor: default !important; /* Отключаем курсор перетаскивания */ 
+}
+
+#jehje5-nick789name-jj5ejeh5-gradient-wrapper {
+    font-weight: 700 !important;
+}

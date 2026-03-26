@@ -1,0 +1,59 @@
+
+.tw-root--theme-dark body {
+    scrollbar-color: hsla(0,0%,100%,.4) transparent;
+}
+
+.tw-root--theme-light body {
+    scrollbar-color: rgba(0,0,0,.4) transparent;
+}
+ 
+ 
+.root-scrollable:has(.channel-root--watch-chat) {
+    scrollbar-width: none;
+}
+ 
+ 
+ 
+
+.scrollable-area {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    z-index: 0
+}
+ 
+
+.scrollable-trigger__wrapper {
+    height: 0;
+    position: relative;
+}
+
+.scrollable-trigger__trigger-area {
+    inset-inline: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1
+}
+ 
+
+.muted-segments-alert__scroll-wrapper.scrollable-area {
+    height: unset;
+}
+ 
+
+.root-scrollable__content {
+    display: flex;
+}
+
+.root-scrollable--persisting-player .root-scrollable__wrapper {
+    padding-bottom: 21rem;
+}
+
+.root-scrollable:has(.channel-root--watch-chat) {
+    scrollbar-width: none;
+}
+ 
+
+.side-nav__scrollable_content {
+    position: relative;
+} 

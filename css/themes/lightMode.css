@@ -1,0 +1,271 @@
+:root {
+    --modal-button-bg: #c2c2c2 !important;
+    --modal-button-color: #b6fad9 !important;
+    --modal-bg: -webkit-linear-gradient(270deg, #f0f0f0 0%, #717171 100%) !important;
+    --modal-button-hover-bg: #d0d0d0 !important;
+    --modal-cancel-bg: #d32f2f !important;
+    --modal-cancel-hover-bg: #f44336 !important;
+    --modal-text: #000000 !important;
+    --modal-overlay-bg: rgba(0, 0, 0, 0.7) !important;
+    --modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    --modal-border: 3px solid #717171 !important;
+}
+
+#add-button ,
+#settings-button ,
+#search-button ,
+#close-modal-settings-button ,
+#unblock-all-button, #block-all-button,
+.button-container button { 
+    border: 1px solid #ffffff !important;
+}
+
+button#blocked-emotes-list-button {
+    color: black !important;
+}
+
+
+.ios-switch input:checked + .slider {
+    background: #656565 !important;
+}
+
+#control-7btvfz-center-x78x05x46-panel,
+.modal-content {
+    background: -webkit-linear-gradient(270deg, rgb(240, 240, 240) 0%, rgb(113, 113, 113) 100%) !important;
+    border: 1px solid #ffffff !important;
+    box-shadow: rgba(0, 0, 0, 0.2) -8px 13px 12px !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.hue-rotate-container label {
+    color: rgb(204, 204, 204) !important;
+}
+
+.version-label {
+    color: rgb(204, 204, 204) !important;
+}
+
+.title {
+    color: rgb(0, 0, 0) !important;
+}
+
+#blocked-emotes-list, #banned-chat-list {
+    background: linear-gradient(45deg, rgb(166, 148, 177), rgba(218, 144, 178, 0.46), rgb(70, 182, 197)) !important;
+    border: 1px solid rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: rgb(129, 129, 129) !important;
+    border: 3px solid rgb(160, 160, 160) !important;
+}
+
+.list::-webkit-scrollbar-track {
+    background: rgb(221, 221, 221) !important;
+}
+
+li.blocked-item {
+    border-top: 1px solid rgb(19, 19, 19) !important;
+}
+
+.blocked-item-text {
+    color: rgb(0, 53, 24) !important;
+}
+
+.blocked-item-link {
+    color: rgb(51, 134, 120) !important;
+}
+
+.blocked-item-date {
+    color: rgb(85, 85, 85) !important;
+}
+
+.delete-button {
+    background: rgb(255, 153, 153) !important;
+    color: rgb(43, 37, 37) !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px !important;
+}
+
+.delete-button:hover {
+    background: linear-gradient(135deg, rgb(110, 109, 109) 0%, rgb(107, 90, 90) 56%, rgb(177, 154, 154) 98%, rgb(172, 141, 141) 100%) !important;
+}
+
+#search-input {
+    background: rgb(63, 63, 63) !important;
+    color: rgb(0, 0, 0) !important;
+    border: 1px solid rgb(204, 204, 204) !important; 
+}
+
+#search-button ,
+#settings-button {
+    background: rgb(194, 194, 194) !important;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button :hover {
+    background: rgb(153, 153, 153) !important;
+}
+
+.input-container #platform-select {
+    background: rgb(63, 63, 63) !important;
+    color: rgb(194, 194, 194) !important;
+    border: 1px solid rgb(194, 194, 194) !important;
+}
+
+#add-input {
+    background: rgb(63, 63, 63) !important;
+    color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgb(204, 204, 204) !important;
+}
+
+#add-button ,
+#settings-button ,  
+.close-modal-settings-button {  
+    background: rgb(194, 194, 194) !important;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button:hover,
+.button-container button:hover {
+    background: rgb(153, 153, 153) !important;
+}
+
+.button-container button {
+    background: rgb(194, 194, 194) ;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px !important;
+    border: 1px solid #ffffff !important;
+}
+
+.button-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.54), transparent) !important;
+    border: 1px solid rgb(0, 0, 0) !important;
+}
+
+button#blocked-emotes-list-button {
+   color: rgb(0, 0, 0)  !important;
+}
+
+button#banned-chat-list-button {
+ color: rgb(0, 0, 0)  !important;
+}
+
+
+#theme-select {
+    background: rgb(63, 63, 63) !important;
+    color: rgb(194, 194, 194) !important;
+    border: 1px solid rgb(194, 194, 194) !important;
+}
+
+#chart-modal {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.chart-container {
+    background: linear-gradient(45deg, rgb(168, 159, 171), rgb(137, 169, 182)) !important;
+    border: 2px solid rgb(25, 202, 218) !important;
+}
+
+#close-chart-button {
+    background: rgb(187, 187, 187) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+#close-chart-button:hover {
+    background: rgb(153, 153, 153) !important;
+}
+
+#sortContainer ,
+#sort-chatbanned-items-container {
+    background: rgb(172, 172, 172) !important;
+    border: 1px solid rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+ 
+
+#counter {
+    background-color: rgb(206, 206, 206) !important;
+    color: rgb(81, 81, 81) !important;
+    border: 3px solid rgb(153, 153, 153) !important;
+}
+
+#unblock-all-button, #block-all-button {
+    background: rgb(187, 187, 187) !important;
+    color: rgb(0, 0, 0) !important;
+    border: 1px solid #ffffff !important;
+}
+
+#unblock-all-button.active, #block-all-button.active {
+    background: rgb(123, 123, 123) !important;
+    border: 1px solid #ffffff !important;
+}
+
+#unblock-all-button:hover, #block-all-button:hover {
+    background: rgb(153, 153, 153) !important;
+}
+
+#open-panel-container {
+    background: rgb(120, 120, 120) !important;
+    border: 1px solid rgb(195, 195, 195) !important;
+}
+
+#open-panel-container:hover {
+    background: rgb(119, 119, 119) !important;
+}
+
+#open-panel-label {
+    color: rgb(214, 214, 214) !important;
+    user-select: none !important;
+}
+
+#open-panel-button {
+    background-color: rgb(178, 178, 178) !important;
+}
+
+#open-panel-button::before {
+    background-color: rgb(95, 95, 95) !important;
+    transition: transform 0.3s !important;
+    box-shadow: rgba(155, 155, 155, 0.384) 0px 1px 3px !important;
+}
+
+#open-panel-button.active {
+    background-color: rgb(206, 206, 206) !important;
+}
+
+#open-panel-container {
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 4px 6px !important;
+}
+
+#toggle-logging-button {
+    background-color: rgb(194, 194, 194) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+#toggle-logging-button:hover {
+    background-color: rgb(28, 136, 95) !important;
+    border: 1px solid rgb(25, 218, 112) !important;
+}
+
+#close-panel-button {
+    color: rgb(208, 208, 208) !important;
+}
+
+.data-selection-modal-content {
+    border: 1px solid rgb(255, 255, 255) !important;
+    background: linear-gradient(208deg, rgb(180, 180, 180) 0%, rgb(85, 85, 85) 100%) !important;
+}
+
+.data-selection-modal-content h3 {
+    color: rgb(240, 225, 225) !important;
+}
+
+.data-selection-modal-button {
+    color: rgb(29, 29, 29) !important;
+}

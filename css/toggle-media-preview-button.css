@@ -1,0 +1,23 @@
+/* Стили для кнопки */
+#toggle-media-preview-button {
+ 
+ cursor: pointer; 
+ transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+/* Красный цвет для выключенного состояния */
+#toggle-media-preview-button.off {
+ background-color: rgb(102, 43, 43);
+ color: white; /* Для лучшей читаемости текста */
+}
+
+/* Зеленый цвет для включенного состояния */
+#toggle-media-preview-button.active {
+ background-color: rgb(16, 114, 60);
+ color: white; /* Для лучшей читаемости текста */
+}
+
+
+span.ffz-i-play {
+    color: #f14b4b !important;
+} 

@@ -1,0 +1,77 @@
+
+
+
+#open-panel-container {
+    position: fixed;
+    top: 4px;
+    right: 18%; 
+    height: 40px;
+    background: rgb(85, 61, 110);
+    border: 1px solid rgb(182, 157, 207);
+    border-radius: 25px;
+    z-index: 9999;
+     align-items: center;
+    padding: 0px 10px 0px 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    box-shadow: rgba(152, 95, 189, 0.5) 0px 5px 9px;
+    width: 190px;
+}
+
+#open-panel-label {
+    color: rgb(182, 157, 207); 
+     margin-right: 10px;
+    user-select: none;
+}
+
+#open-panel-button { 
+    width: 51px;
+    height: 31px;
+    background-color: rgb(137, 111, 159);
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px inset;
+}
+
+#open-panel-button::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+    background-color: rgb(86, 63, 110);
+    border-radius: 15px; 
+    transition: transform 0.3s;
+    box-shadow: rgb(93, 75, 124) 0px 1px 3px;
+}
+
+#open-panel-button.active {
+    background-color: rgb(182, 157, 207);
+}
+
+#open-panel-button.active::before {
+    transform: translateX(20px);
+}
+
+
+
+ 
+
+ #open-panel-button {
+    left: 115px  !important;
+    top: -22px  !important;
+    position: relative  !important;
+}
+
+ #open-panel-label {
+    left: -14px  !important;
+    top: 8px  !important;
+    position: relative  !important;
+    font-family: monospace  !important;
+    font-size: 18px  !important;
+    font-weight: bold  !important;
+}
+
+#open-panel-button::before {  
+    top: 2px  !important; 
+    left: 2px  !important; 
+    position: absolute !important; 
+}

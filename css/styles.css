@@ -1,0 +1,678 @@
+
+
+/* ---------- глобальные стили утилитарных кнопкок  ----------- */
+
+button#clear-chat-button {
+    z-index: 555555 !important;
+    padding: 7px 3px !important;
+     border: 1px solid  rgb(155 220 173 / 50%) !important;
+    border-radius: 35px !important;
+    color: rgb(155 220 173) !important;
+    background: #152b2c !important; 
+} 
+
+button#clear-chat-button:hover {
+    border: 1px solid  rgb(155 220 173 / 50%) !important;
+    border-radius: 35px !important;
+    color:  rgb(208 211 179) !important;
+    background: #041213 !important;
+} 
+
+ 
+ .ios-switch input:checked + .slider {
+    background: #2b695d;
+}
+.ios-switch .slider:before {
+     background: #b59cce;
+}
+
+.modal-content {
+    background: linear-gradient(179deg, #43205a 44%, #837a94 94%);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b59cce;
+    border-image: initial;
+}
+.notification-setting ,
+h3#settings-title{
+     color: #b59ccd;
+}
+#close-modal-settings-button{
+    border: 1px solid #c8b4db;
+}
+
+ 
+button#toggle-global-notifications-button {
+    text-align: revert !important; 
+}
+
+button#toggle-global-notifications-button {
+    text-align: revert;
+}
+button#toggle-isolated-notifications-button {
+    text-align: revert  !important; 
+}
+
+#settings-button {
+    background: #907cad;
+    color: #22182f;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px;
+    width: 80px;
+    height: 35px;
+}
+
+.button-container button ,
+#add-button ,
+#search-button ,
+#settings-button {
+     color: #22182f;
+}
+
+#settings-button:hover  ,
+#search-button:hover {
+  background: #907cad
+}
+
+#add-button ,
+#search-button  {
+    background: #907cad;
+    color: #22182f;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px;
+    width: 80px;
+    height: 35px;
+}     
+
+#add-input , 
+#search-input {
+     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.6) !important;
+}
+/* ---------- глобальные стили утилитарных кнопкок  ----------- */
+
+
+
+
+.theme-selector-container, .search-input, .input-container {
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.theme-selector-container.hidden, .search-input.hidden, .input-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.theme-selector-container.hidden button, .search-input.hidden button, .input-container.hidden button {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.theme-selector-container, .search-input, .input-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#control-7btvfz-center-x78x05x46-panel {
+    user-select: none !important;
+} 
+
+/* здесь   менять ширину и высоту панели */
+#control-7btvfz-center-x78x05x46-panel {
+    position: fixed;
+    top: -160px; /*----- значение invisible для того чтобы далеко скрыть панель -------*/
+    left: 365px;
+    width: 1105px;
+    height: 825px;
+    background: -webkit-linear-gradient(270deg, #e4c83a 0%, #e58415 25%, #813b3b 59%, #43205a 79%, #837a94 100%);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    z-index: 10000;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-280%);
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+    overflow: hidden;
+}
+
+/*  панель видимости когда открыта */
+/* здесь можно менять ширину панели */
+#control-7btvfz-center-x78x05x46-panel.visible {
+     top: 80px;  /* ---- значение открытой панели ----- */
+     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: auto; 
+}
+ 
+/* Изоляция интерактивных элементов при скрытой панели */
+#control-7btvfz-center-x78x05x46-panel:not(.visible) .drag-handle,
+#control-7btvfz-center-x78x05x46-panel:not(.visible) .resize-handle {
+    pointer-events: none !important;
+    cursor: default !important;
+    user-select: none !important;
+     display: none !important;
+}
+
+#sortContainer  {
+    display: flex;  /* Используем flex для горизонтального расположения кнопок */
+    justify-content: space-around;
+    align-items: stretch; 
+    flex-wrap: nowrap; /* Запрещаем перенос кнопок на следующую строку */
+    gap: 10px; /* Заменяем margin-right на gap для равномерных промежутков */
+    width: calc(100% - 180px);
+    position: absolute;
+    top: 60px;
+    left: 10px; 
+    background-color: rgb(89, 51, 114);
+    padding: 5px;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px solid #d2cad6;
+    box-shadow: rgba(0, 0, 0, 0) 0px 15px 6px 0px  !important;
+    z-index: 10001;
+    color: white;
+}
+
+#sortContainer button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    box-sizing: border-box; 
+}
+
+.version-label {
+    position: relative;
+    top: 170px;
+    color: rgb(213, 205, 216);
+    font-size: 12px;
+    font-weight: bold;
+    width: 140px;
+}
+
+
+#search-input:focus {
+    outline: none;
+    border-color: rgb(144, 124, 173);
+}
+
+input#add-input {
+    color: aquamarine !important;
+}
+
+input#search-input {
+    color: aquamarine !important;
+}
+
+#add-button:hover,
+#settings-button:hover,
+#search-button:hover,
+ #settings-button:hover {   
+    background: #b69dcf;
+ }
+
+
+ 
+.button-container button:hover {
+    background: #b69dcf  !important;
+    transition: background-color 0.3s !important;
+    color: rgb(39, 19, 58)   !important;
+}
+
+#platform-select {
+    user-select: none !important;
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+}
+
+#platform-select:focus {
+    outline: none;
+    border-color: rgb(144, 124, 173);
+}
+
+#add-button:hover {
+    background: rgb(122, 91, 154);
+}
+
+#add-input:focus {
+    outline: none;
+    border-color: rgb(144, 124, 173);
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: calc(90px * (var(--panel-height, 735) / 735));
+    left: 10px;
+    width: calc(var(--panel-width, 750px) - 188px);
+    z-index: 10;
+    transition: opacity 0.3s;
+}
+
+#add-input {
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: calc(100% - 240px);
+    height: 35px;
+}
+
+#add-button {
+    background: rgb(144, 124, 173); 
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px;
+    width: 80px;
+    height: 35px;
+}
+
+.search-input {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: calc(130px * (var(--panel-height, 735) / 735));
+    left: 170px;
+    width: calc(var(--panel-width, 750px) - 350px);
+    z-index: 10;
+    transition: opacity 0.3s;
+}
+
+#search-input {
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: calc(100% - 90px);
+    height: 35px;
+}
+
+#search-button {
+    background: rgb(144, 124, 173); 
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px;
+    width: 80px;
+    height: 35px;
+}
+
+.exact-match {
+    background-color: rgb(156, 87, 177) !important;
+}
+
+.exact-match-text {
+    background-color: rgb(255, 255, 0) !important;
+    color: rgb(0, 0, 0) !important;
+    padding: 0px 2px !important;
+    border-radius: 2px !important;
+    z-index: 10000 !important;
+}
+
+.input-container #platform-select {
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: calc(1px * (var(--panel-height, 735) / 735));
+    right: 6px;
+    max-height: calc(var(--panel-height, 735px) - 300px);
+    transition: opacity 0.3s;
+    background: linear-gradient(rgb(101, 58, 13), transparent, rgb(68, 33, 90));
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #d2cad6;
+    user-select: none !important;
+}
+
+.reset-search-results-button {
+    width: 160px;
+    height: 40px;
+    position: static;
+}
+
+.button-container button {
+    width: 155px;
+    height: 40px;
+    background: rgb(144, 124, 173);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    padding: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, opacity 0.3s;
+    right: 4px;
+    position: relative;
+}
+
+.theme-selector-container {
+    position: absolute;
+    bottom: calc(130px * (var(--panel-height, 735) / 735));
+    left: 10px;
+    width: 160px;
+    z-index: 10;
+}
+
+#theme-select {
+    user-select: none !important;
+    background: rgb(25, 36, 39);
+    color: rgb(182, 157, 207);
+    border: 1px solid rgb(182, 157, 207);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+}
+
+#theme-select:focus {
+    outline: none;
+    border-color: rgb(144, 124, 173);
+}
+
+
+.title {
+    margin: 0px 0px 10px;
+    color: rgb(42, 30, 56);
+    text-align: center;
+    width: 245px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+}
+
+h4.title {
+    right: 10px;
+    width: 195px;
+}
+
+#counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(755px * (var(--panel-width, 750) / 750));
+    max-width: 670px;
+    background: rgb(182, 157, 207);
+    color: rgb(76, 42, 94);
+    border: 3px solid rgb(76, 42, 94);
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: calc(14px + 2 * (var(--panel-height, 735) / 735));
+    height: auto;
+    z-index: 999;
+    text-align: center;
+   /* Запрещает перенос текста на новую строку */
+  /* Скрывает текст, выходящий за пределы контейнера */
+  /* Добавляет многоточие при обрезке текста */
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+}
+
+#unblock-all-button, #block-all-button {
+    background: rgb(144, 124, 173);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#unblock-all-button.active, #block-all-button.active {
+    background: rgb(27, 99, 51)  !important;
+}
+
+#unblock-all-button:hover, #block-all-button:hover {
+    background: rgb(122, 91, 154);
+    transition: background-color 0.3s !important;
+}
+
+
+#toggle-logging-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #907cad;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+}
+
+#toggle-logging-button:hover {
+    background-color: rgb(94, 79, 116);
+    border: 1px solid rgb(29, 173, 101);
+}
+
+#toggle-logging-button.active {
+    background-color: rgb(58, 98, 124)  !important;
+}
+
+#control-7btvfz-center-x78x05x46-panel button:not(#sortContainer button):hover {
+    border-radius: 5px;
+    background-color: rgba(26, 110, 71, 0.69) !important;
+    color: rgb(182, 250, 217) !important;
+    border: 1px solid rgb(182, 250, 217) !important;
+    transition: background-color 0.3s !important;
+}
+
+.close-panel-container {
+    position: absolute;
+    width: 80px;
+    border: none;
+    background: none;
+    color: inherit;
+    right: 10px;
+    bottom: 10px;
+    user-select: none !important;
+}
+
+#theme-select:focus,
+#platform-select:focus, 
+#add-input:focus,
+#search-input:focus, 
+#add-input:focus {
+    background: #1c3b3ff3 !important;
+    color: #b6fad9!important;
+    border: 1px solid #b6fad9 !important;
+    transition: background-color 0.3s !important;
+}
+
+.keyword-item:hover .close-panel-container:hover #theme-select:hover, 
+#platform-select:hover,
+#add-input:hover, 
+#search-input:hover, 
+#add-input:hover,
+#sortContainer button:hover { 
+    color: #b6fad9!important; 
+    transition: background-color 0.3s !important;
+}
+
+#sortContainer button:hover {
+    color: rgb(165, 255, 112) !important;
+    transition: background-color 0.3s !important;
+}
+
+#control-7btvfz-center-x78x05x46-panel a:hover {
+    color: rgb(223, 167, 94) !important;
+    transition: background-color 0.3s !important;
+}
+
+
+
+
+/*  -------------     filter: hue-rotate(345deg); ---------------------- */
+ /* Контейнер для ползунка */
+.hue-rotate-container label {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto — стандарт для Android */
+    font-weight: 500;
+    color: var(--text-color, #ffffff);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10001;
+    position: relative;
+    top: 5px;
+}
+
+/* Стили для ползунка */
+.hue-rotate-container input[type="range"] {
+    width: 120px; /* Компактная ширина */
+    height: 8px; /* Высота трека в стиле Material Design */
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(90deg, #757575, #424242); /* Тёмно-серый градиент для трека */
+    border-radius: 4px; /* Закругления для трека */
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Плавный переход для фона */
+}
+
+/* Стили для трека в Chrome, Safari, Edge */
+.hue-rotate-container {
+    z-index: 10001;
+    width: 180px;
+    position: relative;
+    top: 125px;
+    left: 155px;
+}
+
+#hue-rotate-value {
+    position: relative;
+    left: 30px;
+    height: 27px;
+    width: 45px;
+    top: 20px;
+    background: #0c7036;
+}
+
+.hue-rotate-container input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: linear-gradient(90deg, #757575, #424242); /* Тот же градиент для трека */
+    border-radius: 4px;
+}
+
+/* Стили для бегунка в Chrome, Safari, Edge */
+.hue-rotate-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px; /* Увеличенный размер бегунка для Material Design */
+    height: 24px;
+    background: #0c7036; /* Бирюзовый акцентный цвет из палитры Material Design */
+    border: 2px solid #ffffff; /* Белая обводка для контраста */
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Тень в стиле Material */
+    margin-top: -8px; /* Центрируем бегунок */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* Эффект при наведении */
+.hue-rotate-container input[type="range"]:hover::-webkit-slider-thumb {
+    transform: scale(1.15); /* Лёгкое увеличение */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22); /* Усиленная тень */
+}
+
+/* Эффект при активации */
+.hue-rotate-container input[type="range"]:active::-webkit-slider-thumb {
+    background: #018786; /* Более тёмный бирюзовый при нажатии */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Меньшая тень при нажатии */
+}
+
+/* Стили для трека в Firefox */
+.hue-rotate-container input[type="range"]::-moz-range-track {
+    height: 8px;
+    background: linear-gradient(90deg, #757575, #424242); /* Тот же градиент для Firefox */
+    border-radius: 4px;
+}
+
+/* Стили для бегунка в Firefox */
+.hue-rotate-container input[type="range"]::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: #03DAC6; /* Бирюзовый акцент */
+    border: 2px solid #ffffff; /* Белая обводка */
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* Эффекты наведения и активации для Firefox */
+.hue-rotate-container input[type="range"]:hover::-moz-range-thumb {
+    transform: scale(1.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22);
+}
+
+.hue-rotate-container input[type="range"]:active::-moz-range-thumb {
+    background: #018786; /* Более тёмный оттенок */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для значения (градусов) */
+.hue-rotate-container span {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    background: #03DAC6; /* Бирюзовый фон для акцента */
+    padding: 4px 10px; /* Увеличенные отступы для Material Design */
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Лёгкая тень */
+}
+

@@ -1,0 +1,434 @@
+
+/* lists.css стили для    списков в панели ui */
+
+/*------ Если на сайте работает встроенная библиотека, ------ */
+ /*------ скроллбара тогда используем эти css свойства, ------ */
+ /*------ для восстановления своих насосные кастомных стилей ------ */
+
+
+
+
+/* -------------- scrollbar Стили  списков ---------------- */ 
+
+ /* Включаем поддержку ширины и кастомных цветных скроллбаров */
+ /* Включаем поддержку ширины и кастомных цветных скроллбаров */
+ 
+* {
+     scrollbar-color: auto !important; 
+      scrollbar-width: auto !important; 
+}
+ /* Включаем поддержку ширины и кастомных цветных скроллбаров */ 
+ 
+ /*------ Только ресайз ширины при наведении ховер --------*/
+/*------- Только ресайз ширины при наведении ховер --------*/
+ 
+ 
+ #banned-chat-list::-webkit-scrollbar {
+     width: 35px !important; 
+} 
+ 
+ 
+#blocked-emotes-list::-webkit-scrollbar {
+     width: 35px !important; 
+}  
+
+
+.button-container:hover::-webkit-scrollbar {
+     width: 12px !important;
+} 
+
+ .button-container::-webkit-scrollbar {
+     width: 8px !important;
+     background-color: #c1a5ef00  !important; 
+}
+/*------- Только ресайз ширины при наведении ховер --------*/
+/*------- Только ресайз ширины при наведении ховер --------*/
+ 
+
+
+ /* ------------- scrollbar VODs chat   Твич сайта ------------------- */
+ /* ------------- scrollbar VODs chat   Твич сайта ------------------- */
+.video-chat__message-list-wrapper::-webkit-scrollbar {
+    width: 10px !important;
+    background-color: #673ab700 !important;
+}
+ .video-chat__message-list-wrapper::-webkit-scrollbar-thumb {
+    background-color: #59406e ;
+    border-radius: 15px !important; 
+    height: 125px !important; 
+}
+
+ .video-chat__message-list-wrapper::-webkit-scrollbar-thumb:hover {
+     background-color: #714b8c !important;
+     width: 18px !important;
+     border: 2px solid #9e85ab ;
+ }
+
+  .video-chat__message-list-wrapper:hover::-webkit-scrollbar {
+      width: 18px !important;
+ }
+  /* ------------- scrollbar VODs chat   Твич сайта ------------------- */
+ /* ------------- scrollbar VODs chat   Твич сайта ------------------- */
+
+
+
+
+ /* ------------- scrollbar Стили  списков ---------------- */
+ 
+.blocked-emotes-list-container {
+    position: relative;
+    top: 16px;
+    user-select: text !important;
+} /*1  */
+
+#lists-container {
+    max-height: 700px;
+    position: relative;
+    width: calc(100% - 180px);
+    height: calc(var(--panel-height, 735px) - 215px);
+    top: 52px;
+    left: 0px;
+    overflow: hidden;
+      font-family: 'Roboto'  !important;
+} /*2 */
+ 
+
+#blocked-emotes-list {
+    position: absolute;
+    left: 0px;
+    width: calc(100% - 180px);
+    height: calc(var(--panel-height, 735px) - 215px);
+    max-height: 700px;
+    top: calc(170px * (var(--panel-height, 735) / 735));
+    transition: transform 0.3s;
+    overflow-y: auto;
+    color: rgb(195, 206, 207);
+    border: 1px solid #d2cad6;
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px;
+    background: linear-gradient(45deg, rgb(54, 23, 59) 0%, rgb(87, 158, 150) 100%);
+    box-shadow: rgba(0, 0, 0, 0.67) -18px 69px 40px 0px inset;
+} /*3 */
+
+
+/* ----------------- banned-chat-list-container   list-item.keyword -------------------  */
+.banned-chat-list-container { 
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    left: 3px;
+     scroll-behavior: auto; /* Отключаем плавную прокрутку */
+     font-family: 'Roboto'  !important;
+
+}  
+
+#banned-chat-list {
+    background: linear-gradient(45deg, rgb(54, 23, 59) 0%, rgb(87, 158, 150) 100%);
+    box-shadow: rgba(0, 0, 0, 0.67) -18px 69px 40px 0px inset;
+    position: absolute;
+    user-select: text;
+    display: flex; 
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 23px);
+    height: calc(var(--panel-height, 735px) - 250px);
+    max-height: 700px;
+    overflow-y: auto;
+    color: rgb(195, 206, 207); 
+    transform: translateX(-104%);
+    transition: transform 0.3s;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px;
+    flex-direction: row-reverse;
+      font-family: 'Roboto'  !important;
+} /*4 */
+
+
+
+/* ---------- scrollbar индивидуально для Твич  transform Анимация  и скрытие ---------------- */
+/* ---------- scrollbar индивидуально для Твич  transform Анимация  и скрытие ---------------- */
+
+
+.side-nav__scrollable_content {
+    transition: transform 0.3s ease  !important;
+    left: 25px ;
+}
+.side-nav__scrollable_content:hover::-webkit-scrollbar  { 
+     width: 25px !important; 
+     transition: width 0.3s ease !important;  
+  }
+
+ .side-nav__scrollable_content:hover {
+      transform: translateX(-25px) !important;
+}  
+
+ .side-nav__scrollable_content::-webkit-scrollbar {
+      width: 25px !important;  
+      transition: width 0.3s ease !important; /* Плавная анимация изменения ширины */
+  }
+  
+/* ---------- scrollbar индивидуально для Твич  transform Анимация  и скрытие ---------------- */
+/* ---------- scrollbar индивидуально для Твич  transform Анимация  и скрытие ---------------- */
+
+
+
+
+/* ------------- scrollbar Стили индивидуально для Твич сайта ------------------- */
+/* ------------- scrollbar Стили индивидуально для Твич сайта ------------------- */
+ 
+
+  ::-webkit-scrollbar {
+    width: 10px  ;
+    background-color: #c1a5ef00 !important;
+}
+ ::-webkit-scrollbar-thumb {
+    background-color: #c1e4f752 ;
+    border-radius: 15px !important;
+    border: 3px solid #7fc1c000 ;
+    height: 125px !important;
+   
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: #fdfdfd85 !important;
+    width: 18px !important;
+ }
+
+ ::-webkit-scrollbar-track {
+    background: #22c2c200  !important;
+    border-radius: 18px !important; 
+}
+ ::-webkit-scrollbar-corner {
+    background: transparent !important;
+}
+/* ------------- scrollbar Стили для индивидуально Твич сайта ------------------- */
+/* ------------- scrollbar Стили для индивидуально Твич сайта ------------------- */
+
+
+
+
+
+/* ------------- Стили для   emote-selection-popup --------------- */ 
+/* ------------- Стили для   emote-selection-popup --------------- */ 
+ #emote-selection-popup {
+    z-index: 10005 !important;
+ }
+
+ #emote-selection-popup::-webkit-scrollbar {
+     width: 25px !important;
+     background-color: #c1a5ef00 !important;
+}
+
+ #emote-selection-popup::-webkit-scrollbar-thumb {
+    background-color: #317c74 !important;
+    border-radius: 8px !important;
+    border: 2px solid #4ebb9d !important;
+    height: 125px !important;
+}
+/* ------------- Стили для   emote-selection-popup --------------- */ 
+/* ------------- Стили для   emote-selection-popup --------------- */ 
+
+
+
+
+
+ .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            bottom: calc(1px * (var(--panel-height, 735) / 735));
+            right: 6px; 
+            max-height: calc(var(--panel-height, 735px) - 300px);
+            overflow-y: auto; /* Включаем вертикальную прокрутку */
+            overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+            transition: opacity 0.3s;
+            background: linear-gradient(rgb(101, 58, 13), transparent, rgb(68, 33, 90));
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid rgb(71, 236, 200);
+            box-sizing: border-box;
+    }
+    .button-container::-webkit-scrollbar {
+            width: 15px; /* Ширина вертикального скроллбара */
+             height: 55px !important;
+    }
+    .button-container::-webkit-scrollbar-thumb {
+            background: #ffffff1a; /* Цвет ползунка */
+            border: 1px solid rgba(255, 255, 255, 0.54); 
+            border-radius: 5px;
+   }
+    .button-container::-webkit-scrollbar-track {
+            background: rgba(33, 153, 107, 0); /* Цвет трека */
+   }
+    .button-container button {
+            width: 100%;
+            min-height: 40px;
+   }
+
+
+/* ------------------ blocked-emotes-list-items -------------------------------------- */
+li.blocked-item:hover, li.keyword-item:hover {
+    background-color: rgba(58, 130, 20, 0.73);
+    color: rgb(242, 255, 180);
+     font-family: 'Roboto'  !important;
+}  /*19 */
+
+.blocked-item {
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+} /*14 */
+
+.new-item {
+    background-color: rgba(77, 100, 16, 0.82);
+    color: rgb(209, 231, 241);
+} /*15 */
+
+.blocked-item a {
+    color: rgb(191, 205, 166);
+} /*16 */
+
+
+.delete-button:hover {
+    background: rgb(140, 60, 60);
+    transition: background-color 0.3s !important;
+} /*22 */
+
+
+li.blocked-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-weight: bold;
+    border-top: 1px solid rgb(38, 255, 31);
+      font-family: 'Roboto'  !important;
+} /*20 */
+
+
+
+.data-time {
+    font-size: 14px;
+    user-select:text !important;
+} /*18 */
+
+
+.delete-button {
+    background: rgb(168, 77, 77);
+    color: rgb(255, 255, 255);
+    height: 35px;
+    width: 75px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none !important;
+} /*21 */
+
+/* --------------------- Стили для элементов bannedchat list  ------------------------- */
+
+ 
+
+ 
+ 
+
+
+ 
+li.keyword-item, li.blocked-item, li.list::-item {
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+li.keyword-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-weight: bold;
+    border-top: 2px solid rgba(39, 255, 31, 0.384);
+    width: 100%;
+    height: 75px;
+      font-family: 'Roboto'  !important;
+}
+
+.keyword-content {
+    font-family: 'Roboto'  !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 55px;
+    border-top: 2px solid rgba(131, 131, 131, 0.788);
+    padding: 0 15px;
+    font-family: 'Roobert' !important;
+    font-weight: 600;
+}
+
+span.item-text {
+    flex: 1; /* Текст занимает всё доступное пространство */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px; /* Отступ, чтобы текст не прижимался к кнопкам */
+}
+ 
+ 
+ 
+
+
+
+
+
+.date-delete-group {
+   flex-shrink: 0; /* Предотвращает сжатие кнопок */
+    width: auto; /* Или фиксированная ширина, например, 100px */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    position: relative;
+    top: 0px;
+    right: 15px;
+}  
+
+ /* Адаптивные стили для кнопки delete duplicates */
+
+.duplicates-container {
+    position: relative;
+    top: 80px;
+}
+
+
+ 
+
+/* ----------------------------- styles for searсhin chatbanneditems list ----------------------------*/
+ 
+ 
+
+/* ------------------------ Стили delete duplicate button ---------------------------  */
+
+/* Стили для чекбокса и кнопки удаления дубликатов */
+#show-duplicates-сheckbox {
+    vertical-align: middle;
+}
+#delete-duplicates-button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+/* Стили для чекбокса и кнопки удаления дубликатов */
+.duplicate-сheckbox {
+    vertical-align: middle;
+}
+
+ /*------------------------- Стили delete duplicate button ---------------------------  */
+
+ 

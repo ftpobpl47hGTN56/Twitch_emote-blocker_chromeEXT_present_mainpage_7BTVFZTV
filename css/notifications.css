@@ -1,0 +1,60 @@
+/*  notification.js notification.css */
+
+  .notification {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    user-select: text !important;
+    z-index: 10002 !important;
+  }
+  
+  .notification.success {
+    background-color: #341d41;
+    color: #30aa54;
+    border: 1px solid #30aa54;
+  }
+  
+  .notification.error {
+    background-color: #4b1d1d;
+    color: #ff9c9c;
+    border: 1px solid #ff9c9c;
+  }
+  
+  .global-notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+     z-index: 10002 !important;
+  }
+  
+  .panel-notification {
+    position: absolute;
+    right: 10px;
+    z-index: 10002 !important;
+  }
+
+
+  /*  Контейнер для уведомлений */
+
+  .notification {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    user-select: text !important;
+    z-index: 10002 !important;
+}
+
+
+.global-notification {
+    position: fixed;
+    right: 10px;
+    z-index: 10002 !important;
+}
