@@ -1,0 +1,61 @@
+{
+  "manifest_version": 3,
+  "author": "(C) tapeavion",
+  "name": "[Twitch.tv] Control Panel v2.155.26",
+  "version": "2.155.26",
+  "description": "универсальная панель v2.155.26",
+
+  "permissions": [
+    "downloads",
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "webNavigation"
+  ],
+
+  "host_permissions": [
+    "https://www.twitch.tv/*",
+    "https://*.twitch.tv/*",
+    "https://*.ttvnw.net/*",
+    "https://*.jtvnw.net/*",
+    "https://*.twitchcdn.net/*",
+    "https://cdn.frankerfacez.com/*",
+    "https://cdn.7tv.app/*",
+    "https://i.nuuls.com/*",
+    "https://twitchtracker.com/*",
+    "https://cdn.betterttv.net/*"
+  ],
+
+  "background": {
+    "service_worker": "js/service_worker.js"
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "7btvfz_Panel_54h54.html",
+        "Debug_7btvfz_logo__Panel_List_V4.png",
+        "css/themes/*.css",
+        "bug_fixes_userscripts/*.js"
+      ],
+      "matches": [
+        "https://www.twitch.tv/*",
+        "https://*.twitch.tv/*",
+        "https://twitchtracker.com/*",
+        "https://kick.com/*"
+      ]
+    }
+  ],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://cdn.7tv.app https://cdn.betterttv.net https://*.twitchcdn.net"
+  },
+
+  "icons": {
+    "48":  "Debug_7btvfz_logo__Panel_List_V4.png",
+    "64":  "Debug_7btvfz_logo__Panel_List_V4.png",
+    "128": "Debug_7btvfz_logo__Panel_List_V4.png",
+    "256": "Debug_7btvfz_logo__Panel_List_V4.png"
+  }
+}

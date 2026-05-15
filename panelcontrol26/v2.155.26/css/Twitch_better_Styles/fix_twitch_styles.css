@@ -1,0 +1,900 @@
+
+
+ 
+ /* ------------- Заглушка для фикс чата когда он был наполовину поднят вверх  -----------*/ 
+
+.chat-scrollable-area__message-container {
+    position: relative  !important;
+    top: -35px  !important;
+}
+
+/* Убедимся, что контейнер чата не обрезает содержимое */
+.chat-scrollable-area__message-container {
+    overflow: visible  !important;  
+}
+
+
+.scrollable-area {
+    height: 100%  !important;
+    position: relative  !important;
+    z-index: 0  !important;
+    overflow: auto  !important;
+}
+
+/*----- ПРОФИЛЬ КАРТОЧКА ЮЗЕРА rename twitch users css -----------------*/
+ /*-----------  кнопка закрыть close  ПРОФИЛЬ КАРТОЧКА ЮЗЕРА -----------*/
+
+button.ScCoreButton-sc-ocjdkq-0.iPkwTD.ScButtonIcon-sc-9yap0r-0.dcNXJO {
+    z-index: 555555  !important;
+} 
+/*-----------  кнопка закрыть close  ПРОФИЛЬ КАРТОЧКА ЮЗЕРА -----------*/
+
+ /*----- перемещаем ПРОФИЛЬ КАРТОЧКА ЮЗЕРА rename twitch users css -----------------*/
+ /* .Layout-sc-1xcs6mc-0.fnAnmU.viewer-card {
+    position: absolute !important;
+    width: 490px !important;
+    left: -520px !important;
+} */
+
+ /*----------  уебанский hide acces dialog И button overlay  ---------------*/
+ /*----------  уебанский hide acces dialog И button overlay  ---------------*/
+
+
+ /* ------------- Заглушка для   чата когда он был наполовину поднят вверх  -----------*/ 
+ /* ------------- Заглушка для   чата когда он был наполовину поднят вверх  -----------*/ 
+ /* ------------- Заглушка для   чата когда он был наполовину поднят вверх  -----------*/ 
+
+ 
+ 
+
+
+
+/* ----- надо пофиксить что то с кнопкой "кнопка Chat Paused Due to Scroll" ----- */
+/* .Layout-sc-1xcs6mc-0.InjectLayout-sc-1i43xsx-0.etHxQt { 
+    overflow: visible  !important;
+}
+ */
+
+
+/*----------------------------
+    Display Bits
+    Display UI associated with bits. Note: This will not hide cheering in chat messages.
+
+    Cheer Stacking
+
+    All in One
+    Collect all the cheers in a message into a single cheer at the start of the message. 
+---------------------------*/
+ 
+
+/*---------------------------- hide subtember spam popup -----------------------------*/
+.Layout-sc-1xcs6mc-0.ScLayoutCssVars-sc-1pn65j5-0.fThMQN.bQBtBr.tw-root--theme-light {
+    display: none !important;
+}
+
+/*---------------------------- end of subtember spam popup ---------------------------*/
+
+/*------ social-sharing-badge-promo-banner ------*/
+
+ 
+.Layout-sc-1xcs6mc-0.gLGEhD {
+    display: none  !important;
+}  /*------ social-sharing-badge-promo-banner ------*/
+
+/*------------------ hide Список gift лидеров над чатом -------------------- */
+
+button.ScInteractableBase-sc-ofisyf-0.ScInteractableDefault-sc-ofisyf-1.iCUBCA.blixHj.tw-interactable {
+     display: none  !important; 
+}
+
+.Layout-sc-1xcs6mc-0.gSwbdq.InjectLayout-sc-1i43xsx-0.dJCrpT {
+      display: none  !important;
+}
+
+.highlight__click-target {
+      display: none  !important;
+}
+
+.Layout-sc-1xcs6mc-0.jubumC.community-highlight {
+     display: none  !important;
+}
+.MDeVm.ScTransitionBase-sc-hx4quq-0.tw-transition {
+     display: none  !important;
+}
+
+ .community-highlight-stack__scroll-area--disable {
+        overflow: hidden  !important;
+        display: none  !important;
+ } 
+ .community-highlight-stack__card.community-highlight-stack__card--wide {
+        display: none  !important;
+ }
+
+/*------------------ hide Список gift лидеров над чатом -------------------- */
+
+
+
+/*------------------ hise spam gif animations -------------------- */
+
+canvas {
+    display: none   !important;
+}
+
+.Layout-sc-1xcs6mc-0.UqGgX.animatedMessageContainer.simmerBackground {
+    display: none  !important;
+}
+
+.Layout-sc-1xcs6mc-0.blMhie.animatedMessageHighlight.rainbowEclipseTextContainer {
+    display: none  !important;
+}
+
+.Layout-sc-1xcs6mc-0.djEcoG.rainbowEclipseMessageWrapperGlow.rainbowEclipseRotateEffect {
+    display: none   !important;
+}
+/*------------------ hise spam gif animations -------------------- */
+
+ 
+
+/*--------- fix ffz scroll tree menu --------------*/
+.simplebar-wrapper {
+    overflow: auto !important;
+    max-height: 900px !important;
+    will-change: scroll-position !important;
+    scroll-behavior: smooth !important;
+}
+
+
+
+
+
+ #extension.menu-open .menu, body #extension.mouse-activity .menu {
+    display: none  !important;
+}
+
+  #extension .menu-container {
+    display: none  !important;
+}
+
+ /*----------  уебанский hide acces dialog И button overlay  ---------------*/
+ /*----------  уебанский hide acces dialog И button overlay  ---------------*/
+
+/*----------  уебанский  fix & hide cheer Display Bits ---------------*/
+  
+ .ScNewItemIndicatorWrapper-sc-1udtibe-2.lbpZbS.tw-new-item-indicator__container {
+    position: absolute  !important;
+    top: -5px  !important;
+    right: 251px  !important;
+    opacity: -0.7  !important;
+}   
+
+ 
+
+/*--------- fix ffz scroll tree menu -------------- */
+
+/* ----- фикс прокрутивания дерева меню в настройках FFZ ----- */
+.simplebar-wrapper {
+    overflow: auto   !important; 
+    max-height: 900px  !important; 
+}              /* Keep scrolling */
+ 
+/* -------------- trhead reply ping mention --------- */
+/* -----  фикс упоминания в чате, обрезка текста  ----- */
+
+/* 
+ .chat-line__message.ffz-mentioned {
+    white-space: nowrap  !important; 
+    overflow: hidden  !important; 
+    text-overflow: ellipsis  !important; 
+} 
+*/
+ 
+/* ------- Ограничиваем высоту ffz-mentioned контейнера с прокруткой   --------*/
+/* -----  ограничиваем высоту контейнера для поиска смайлов в поле ввода чата  ----- */
+.chat-input-tray__open {
+    border-bottom: 0  !important;
+    bottom: 100%  !important;
+    box-shadow: 0 1px 2px var(--color-border-base) 0 0 2px var(--color-border-base)  !important;
+    clip-path: inset(-2px -2px 1px -2px)  !important;
+    margin: 0 calc(var(--space-05) * -1) calc(var(--space-05) * -1)  !important;
+    min-width: 100%  !important;
+    /* max-height: 300px  !important;   */
+    /* overflow-y: auto  !important;  */ 
+    /* overflow-x: hidden  !important; */
+}
+
+ 
+
+/* -----  фикс drag and drop в FFZ viewer card  ----- */
+.viewer-card-layer__draggable {
+    cursor: move  !important;
+    pointer-events: all  !important;
+    width: 34rem  !important;
+    -webkit-app-region: drag  !important;
+}
+
+/* -----  Chat Identity Identity Preview How your name will appear in chat on " " channel: ----- */
+/* -----  сдвигаем блок с настройками цвета и имени в чате  ----- */
+
+.Attached-sc-go6eno-0.cJkJNl {
+    position: absolute  !important;
+    z-index: var(--z-index-balloon)  !important; 
+    border: 2px solid #299b90  !important;
+    border-radius: 20px 20px 20px 20px  !important;
+    margin-block-end: 8px  !important;
+    margin-inline-end: -28.3rem  !important;
+    inset: auto 338px 100% auto  !important;
+}
+.chat-identity-menu {
+    border-radius: 0px 0px 20px 20px  !important;
+}
+.chat-identity-menu {
+    white-space: normal;
+    width: 360px  !important;
+}
+
+.chat-identity-menu__header {
+    border: 2px solid #55b32e03  !important;
+    border-radius: 20px 20px 0px 0px  !important;
+}
+.chat-identity-menu__content {
+      border-radius:0px 0px  20px 20px   !important;
+}
+
+.ScBalloonWrapper-sc-14jr088-0.kpgZBi.InjectLayout-sc-1i43xsx-0.dduVcl.tw-balloon { 
+    border-radius: 20px 20px 20px 20px  !important;
+}
+
+/* -----  Chat Identity Identity Preview How your name will appear in chat on " " channel: ----- */
+/* -----  сдвигаем блок с настройками цвета и имени в чате  ----- */
+
+ 
+
+/*---------- кнопка View on 7TV  border-radius -------*/
+.ffz-balloon.tw-block.tw-absolute.tw-z-above.tw-border-radius-medium.tw-c-background-alt-2.ffz-balloon--sm.ffz-il-tooltip--down.ffz-il-tooltip--align-right {
+    height: 43px  !important;
+    border-radius: 54px  !important;
+}
+.ffz-balloon>.ffz-balloon__tail {
+    height: 1px  !important; 
+}
+.tw-border-t.tw-border-r.tw-border-b.tw-border-l.tw-elevation-1.tw-border-radius-small {
+    border-radius: 18px  !important;
+
+}
+/*---------- end of кнопка View on 7TV  border-radius -------*/
+
+
+/*-----  цвет фона карточки поисковой выдачи смайлов  ------- */
+
+ .autocomplete-match-list {
+    min-height: 550px  !important; 
+    background: rgb(17, 47, 38)  !important;
+    border-width: 2px  !important;
+    border-style: solid  !important;
+    border-color: rgb(29, 141, 125)  !important;
+    border-image: initial  !important;
+    border-radius: 8px 8px 0px 0px  !important;
+}
+ 
+/*-------------  chat-replies-list thread reply ping mention  ------------- */
+.chat-replies-list {
+    background: #152f27  !important;
+    border: 2px solid #3f9783 !important;
+    border-radius: 7px !important;
+}
+
+.Layout-sc-1xcs6mc-0.gUIaxI.chat-replies-list.chat-replies-list--with-gradient {
+    background: #0f3535  !important;
+    border: 2px solid #2a6f6b  !important;
+    border-radius: 8px  !important;
+}
+
+ /*---------------------  ПЕРЕНОС ТЕКСТА В ЧАТЕ ------------------------ */  
+ /*--------- когда он длинный в одну строку и скрывается за гранью страницы -------*/
+
+.Layout-sc-1xcs6mc-0.InjectLayout-sc-1i43xsx-0.etHxQt {
+    word-break: break-all  !important;
+}
+
+
+span.message {
+      word-break: break-all  !important;
+} /* перносит часть строки на следующий строку */
+ /*--------------------  ПЕРЕНОС ТЕКСТА В ЧАТЕ ------------------ */  
+ /*--------- когда он длинный в одну строку и скрывается за гранью страницы -------*/
+
+
+/*--------------- фикс чата сообщений баг перекрытия  --------------/
+/* Убедимся, что никнейм и текст сообщения не перекрываются */
+/* Позволяет перенос текста */
+.chat-line__message-container {
+    display: flex  !important;
+    flex-wrap: wrap  !important; 
+    align-items: flex-start  !important; 
+}
+
+/* Ограничиваем ширину никнейма, чтобы он не перекрывал текст */
+.chat-line__username {  
+    text-overflow: ellipsis  !important;
+    white-space: nowrap  !important; /* Никнейм не переносится */
+}
+
+  
+
+.ffz-pn--list.chat-list--other.font-scale--default.ffz-pn--top {
+  max-height: 30vh  !important;
+  overflow-y: auto  !important;
+    background: linear-gradient(216deg, #25183b, #154742) !important;
+    border: 2px solid #009688 !important;
+    border-radius: 7px !important;
+}
+
+.ffz-pn--list.chat-list--other.font-scale--default.ffz-pn--bottom {
+  max-height: 30vh  !important;
+  overflow-y: auto  !important;
+  background: linear-gradient(216deg, #25183b, #154742) !important;
+    border: 2px solid #009688 !important;
+    border-radius: 7px !important;
+}
+
+
+/* ----------- fix fonts фикс шрифт когда в никнеймах паразитирующие мусорный символ ----------- */
+a.ScCoreLink-sc-16kq0mq-0.dEeZDR.tw-link {
+    font-family: system-ui  !important;
+}
+
+
+
+.custom-nickname-container:hover::after {
+   z-index: 555555  !important;
+    white-space: normal  !important;
+    word-break: break-word  !important;
+}
+
+
+
+/* ------ обрезка ссылок что бы чат не становился бесконечно широкой мусорной свалкой-------------- */
+.tw-flex.ffz--rich-header {
+    overflow: hidden  !important;
+    white-space: nowrap  !important;
+    text-overflow: ellipsis  !important;
+    padding: 5px  !important;
+    width: 300px  !important;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+/* ============== FFZ emote name и цвет фона для текста вместо белого ================== */ 
+.ffz__tooltip {
+    background: linear-gradient(205deg, rgb(64, 111, 118), rgb(59, 29, 71))  !important;
+    color: #59d3c3  !important;
+    font-size: 16px  !important;
+}
+/* ============== FFZ emote name и цвет фона для текста вместо белого ================== */ 
+
+/*=============================== auto_hide_spam_mentions =============================== */
+ 
+
+/* =========================== Стили для спам-сообщений====================== */
+ 
+/*=============================== auto_hide_spam_mentions =============================== */
+
+
+ /*====== кнопка репорт и перейти на страницу смайла 7tv ============*/
+ .tw-border-t.tw-border-r.tw-border-b.tw-border-l.tw-elevation-1.tw-border-radius-small {
+    background: #2d414b !important;
+    border-radius: 19px !important;
+}
+a.tw-block.ffz-interactable.ffz-interactable--hover-enabled.ffz-interactable--default.tw-interactive.tw-full-width.ffz--cursor {
+    background: #292433 !important;
+    border-radius: 19px !important;
+    border: 2px solid #657775 !important;
+}
+a.tw-block.ffz-interactable.ffz-interactable--hover-enabled.ffz-interactable--default.tw-interactive.tw-full-width.ffz--cursor:hover {
+    background: #435b61 !important;
+} 
+
+/*=====================================================================*/
+
+ 
+  /*------------ hide sub gift buy ads ------------*/
+  .Layout-sc-1xcs6mc-0.kPgWRp {
+    display: none !important;
+}
+
+  /*------------ hide sub gift buy ads ------------*/
+
+
+
+  /*------------ hide sub gifted SPAM IN CHAT ------------*/
+ 
+
+/* Скрываем все user-notice-line */
+[data-test-selector="user-notice-line"] {
+    display: none  !important;
+}
+
+/* Если хочешь скрывать только определённые типы (например, только Watch Streak) */
+[data-test-selector="user-notice-line"] 
+    .CoreText-sc-1txzju1-0.hrNMGE:has-text("Watch Streak") {
+    display: none  !important;
+}
+
+.ffz--subscribe-line.ffz-notice-line.user-notice-line.tw-pd-y-05 {
+    display: none !important;
+}
+
+ 
+.ffz--subscribe-line.ffz-notice-line.user-notice-line.tw-pd-y-05 {
+    display: none  !important;
+}
+
+.gift-highlight-gradient-container {
+    display: none  !important;
+}
+
+ 
+.community-highlight {
+     display: none  !important;
+} 
+.Layout-sc-1xcs6mc-0.eynKOr {
+    display: none  !important;
+}
+
+.ffz--points-line.tw-pd-l-1.tw-pd-r-2.ffz-custom-color.ffz--points-highlight.ffz-notice-line.user-notice-line.tw-pd-y-05 {
+    display: none  !important;
+}
+
+ /*------------ hide sub gifted SPAM IN CHAT ------------*/
+
+
+
+
+ /*---- пернос текстав  в чате твич ------------- */
+.text-fragment {
+    white-space: normal  !important; /* Разрешает перенос текста */
+    word-wrap: break-word  !important; /* Переносит длинные слова */
+}
+ /*---- пернос текстав  в чате твич ------------- */
+
+ /*--------- pinned announce ЗАКРЕПЛЕННЫЕ ОБЪЯВЛЕНИЯ highlight  -------------*/
+ .highlight {
+    background: linear-gradient(45deg, #235550, #211831) !important;
+    border: 2px solid #3f9783  !important; 
+    border-radius: 5px  !important;
+}
+ .Layout-sc-1xcs6mc-0.cKpxcT.highlight {
+    background: linear-gradient(45deg, #235550, #211831) !important;
+    border: 2px solid #3f9783 !important;
+}
+.Layout-sc-1xcs6mc-0.ewHCiz.highlight.highlight__collapsed {
+    background: linear-gradient(45deg, #235550, #211831) !important;
+    border: 2px solid #3f9783 !important;
+}
+.Layout-sc-1xcs6mc-0.cmjyzq.highlight.highlight__collapsed {
+    background: linear-gradient(45deg, #235550, #211831) !important;
+    border: 2px solid #3f9783 !important;
+}
+ /*--------- pinned announce ЗАКРЕПЛЕННЫЕ ОБЪЯВЛЕНИЯ highlight  -------------*/
+
+ /*-------------- extensionsin video player hide ----------------------*/
+ .extensions-dock__layout { 
+    display: none !important; 
+}
+.prime-extension-root__extension.prime-extension-root__extension--top-left {
+    display: none !important;
+}
+    
+.ScTransitionBase-sc-hx4quq-0.kYjGAo.tw-transition {
+    display: none !important;
+}
+ 
+
+ /*-------------- extensionsin video player hide ----------------------*/
+
+/*-------------- hide new shitty oneTapIngressButton heart button ----------------------*/
+.oneTapIngressButton--inGsR.ingressButtonBackground--xHmq6 {
+    display: none  !important;
+}
+/*-------------- hide new shitty oneTapIngressButton heart button ----------------------*/
+
+
+
+
+
+
+
+/*-------------- video player-settings  цвет фона видео настроек твич ------------------*/
+.ScBalloonWrapper-sc-14jr088-0.kwRewi.InjectLayout-sc-1i43xsx-0.kCsLVM.tw-balloon {
+    background: #022121  !important;
+    border: 1px solid #06897d  !important;
+}
+/*--------------  цвет фона видео настроек твич ------------------*/
+
+ input#message-limit-input {
+    background: #0e1a1a  !important;
+    border: 2px solid #00655b  !important;
+    border-radius: 6px  !important;
+    color: #9dbdba  !important;
+} 
+ 
+/*============= фикс шрифт замена уродливых символов что бы не засорять чат ==============*/
+/*--------------  цвет mention в чате ------------------*/
+
+.chat-line__message-container[style*="max-height: 150px"] { 
+      z-index: 100000  !important;
+}
+
+/* Стили для всех упоминаний */
+.chat-line__message-mention {
+    background: #5d38a600  !important;
+    border-radius: 19px  !important;
+    border: none  !important; /* Сбрасываем бордер */
+    z-index: 100000  !important;
+    padding: 13px  !important;
+}
+
+/* Стили для конкретных упоминаний в <strong> */
+strong.chat-line__message-mention.ffz--pointer-events {
+    font-style: italic  !important;
+    color: rgb(144, 125, 169)  !important;
+    border: none  !important; /* Сбрасываем бордер */
+    z-index: 100000  !important;
+} 
+ 
+ 
+span.text-fragment {
+    color: #c7c7c7  !important;
+}
+  
+span.text-fragment {
+    word-break: break-word  !important;
+}
+
+/*============= фикс шрифт замена уродливых символов что бы не засорять чат ==============*/
+
+
+ /*------------ video-ref.video-player--stream-display-ad_lower -----------*/
+ /*------------ SUB ADS СТРИМЕР СПРЯТАТЬ-stream-display-ad_lower -----------*/
+
+ .Layout-sc-1xcs6mc-0.video-ref.video-player--stream-display-ad_lower-third {
+    height: calc(100.0929% + 0px) !important;
+    width: calc(100%) !important;
+}
+
+.stream-display-ad__frame_lower-third {
+    inset-inline-start: 50% !important;
+    position: absolute !important;
+    top: 0 !important;
+    display: none !important;
+}
+  
+.video-player__container {
+    position: absolute  !important;
+    top: 0px  !important;
+    height: calc(100.0929% + 4px) !important;
+    width: calc(100%) !important; 
+}
+ 
+ 
+div#stream-lowerthird {
+    inset-inline-start: 50% !important;
+    position: absolute !important;
+    top: 0 !important;
+    display: none !important;
+}
+ 
+ /*------------ video-ref.video-player--stream-display-ad_lower -----------*/
+ /*------------ SUB ADS СТРИМЕР СПРЯТАТЬ-stream-display-ad_lower -----------*/
+
+
+
+/* скрыть кнопку редиректа рекламы с классом ScCoreButton-sc-ocjdkq-0 kJMgAB  ="Learn more about this ad" */
+
+  
+/* скрыть кнопку редиректа рекламы с классом ScCoreButton-sc-ocjdkq-0 kJMgAB  ="Learn more about this ad" */
+
+.Layout-sc-1xcs6mc-0.video-player__default-player.video-player__inactive {
+    display:none !important;
+}
+ 
+ /*------------ video-ref.video-player--stream-display-ad_lower -----------*/
+ /*------------ SUB ADS СТРИМЕР СПРЯТАТЬ-stream-display-ad_lower -----------*/
+
+
+ /*------------ HIDE HIGHLIGHT  REDEEM MESSAGE buged & stuck  -----------*/
+ /*
+ .ffz--points-line.tw-pd-l-1.tw-pd-r-2.ffz-custom-color.ffz--points-highlight.ffz-notice-line.user-notice-line.tw-pd-y-05.tw-relative {
+   /* display: none !important;  
+} */
+/*------------ HIDE HIGHLIGHT MESSAGE REDEEM MESSAGE -----------*/
+
+/* ==================== ffz reset,compresor ---- video player button zindex -100000 ==================== */ 
+ 
+.ffz--player-reset.tw-inline-flex.tw-relative.ffz-il-tooltip__container {
+    position: relative !important;
+    z-index: 100000 !important;
+    right: 160px !important;
+}
+
+
+/* ==================== twitch  1080p tooltip Quality button ==================== */
+
+ span.CoreText-sc-1txzju1-0.ScPill-sc-uwplbb-0.cbuRFw.gUwAuK.tw-pill {
+  position: relative  !important;
+    z-index: 100000  !important;
+    left: 115px  !important;
+    top: -75px  !important;
+    font-weight: 500  !important;
+    font-size: 14px  !important;
+    background-color: #082b28  !important;
+    color: rgb(51, 233, 193)  !important;
+    border-width: 1px  !important;
+    border-style: solid  !important;
+    border-color: rgb(6, 137, 125)  !important;
+} 
+/* ==================== twitch  1080p tooltip Quality button ==================== */
+
+
+ 
+/*------------- player-gain.volume-slider_ ------------------*/
+/*------------- востановление затерянного полоски компресора -------------*/
+
+ 
+/*------------- player-gain.volume-slider_ ------------------*/
+/*------------- востановление затерянного полоски компресора -------------*/
+ 
+.tw-border-radius-large.ffz-range__fill-value.ffz--gain-value {
+    background: rgb(75, 255, 195)  !important;
+    height: 3px  !important;
+}
+
+  .ffz-range__fill {  
+     height: 17px  !important;  
+  }
+      
+
+.ffz--player-gain
+.volume-slider__slider-container
+.tw-relative
+.ffz-il-tooltip__container { 
+    height: 2px; /* Толщина полоски */
+    border-radius: 3px; /* Уберите скругление, если нужна четкая линия */
+    position: relative  !important;
+    z-index: 100000  !important;
+    left: 130px  !important;
+} 
+ .ffz-range::-webkit-slider-runnable-track {
+    cursor: pointer;
+    height: .2rem;  
+    height: 2px !important;
+    border-radius: 3px !important;
+      
+}
+/*------------- compressor button player-gain. вызов ------------------*/
+.ffz--player-comp
+.tw-inline-flex
+.tw-relative
+.ffz-il-tooltip__container {
+    position: relative !important;
+    z-index: 100000 !important;
+    left: 125px !important;
+     
+}
+
+/*------------- player-gain.volume-slider_ ------------------*/
+
+/* ==================== ffz reset,compresor ---- video player button zindex -100000 ==================== */ 
+
+ 
+
+
+
+ /*============= максимальная автовысота для инпут ввода что бы не засорять вид чата ==============*/
+/*------------------- chat room__content  background ------------------- */
+
+
+.chat-room__content { 
+    background: #111919  !important;
+}
+/* ==================== chat room__content  background ==================== */
+/*============= разворот при наведении и сворачивание для реплай сообщения что бы не засорять чат ==============*/
+
+ /*-------- hide prime amazon twitch popup --------*/
+.prime-extension-root--show {
+    display: none  !important;
+}
+.dropdown-button.dropdown-button--free-stuff.dropdown-button--non-prime-expanded {
+ display: none  !important;
+}
+
+
+.prime-extension-root.prime-extension-root--show {
+  display: none  !important;
+}
+
+
+.extensions-dock__layout
+.extensions-video-overlay-size-container
+div.Layout-sc-1xcs6mc-0.kXYDBY.giftExpirationCalloutCreatorLed--MnvcU {
+     display: none  !important;
+}
+ /*-------- hide prime amazon twitch popup --------*/
+
+
+
+ 
+ /*------------- twitch Settings chat popup -----------------*/
+
+ /*------------- twitch live stream title popup -----------------*/   
+.ScBalloonWrapper-sc-14jr088-0.kyIBpI.InjectLayout-sc-1i43xsx-0.dduVcl.tw-balloon {
+    position: relative  !important;
+    right: 19%  !important;
+    border-radius: 18px  !important;
+} 
+/*------------- twitch live stream title popup -----------------*/  
+
+
+ .chat-settings__header {
+  
+    border-radius: 18px 18px 0px 0px   !important;
+}
+
+.chat-settings__popover {
+ 
+    border: aquamarine 2px solid  !important;
+    border-radius: 18px  !important; 
+}
+
+.Layout-sc-1xcs6mc-0.iqOVCW {
+   border-radius: 0px 0px 18px 18px  !important;
+}
+
+ .Layout-sc-1xcs6mc-0.fJjWcz.chat-settings__content {
+    border-radius: 0px 0px  18px 18px  !important;
+}
+
+ .chat-settings__content {
+    border-radius:  0px 0px 18px 18px   !important;
+}
+ 
+.online-side-nav-channel-tooltip__body {
+    position: relative  !important;
+    left: 3%  !important;
+}
+   
+ /*------------- twitch Settings chat popup -----------------*/
+
+ /*---- Live,Offline tooltip marker Container ------ */
+.ScMediaCardStatWrapper-sc-anph5i-0.kMBPhM.tw-media-card-stat {
+    left: -7px;
+    position: relative;
+    background: #714e91;
+    border-radius: 6px;
+    padding: 3px 7px;
+    color: #d7c0ff  !important;
+}
+
+.Layout-sc-1xcs6mc-0.glSYqJ {
+    position: relative  !important;
+    left: 25%  !important;
+}
+/*---- Live,Offline tooltip marker Container ------ */
+
+
+
+ /*--------------- hide highlight cheers spam effects --------------- */
+ 
+ .Layout-sc-1xcs6mc-0.bhaXXt.animatedMessageContainer.cosmicBackground {
+    background: #0f2324  !important;
+    /* display: none  !important; */
+}
+ /*--------------- hide highlight cheers spam effects --------------- */
+
+ /*----- twitch live text markers fix -------*/
+ .ScChannelStatusTextIndicator-sc-qtgrnb-0.ilvRlP.tw-channel-status-text-indicator {
+    background-color: #d23a3a  !important;  
+    padding: 3px 5px   !important;
+    color: #b9f1ff  !important;
+    right: 30px   !important;
+    position: relative   !important;
+}
+ 
+.Layout-sc-1xcs6mc-0.ScChannelStatusTextIndicatorMask-sc-qtgrnb-1.iVNwQl.iKZUvW {
+     left: 30px  !important;
+    position: relative  !important;
+    padding: 3px 5px  !important;
+}
+ 
+/*----- twitch live text markers fix -------*/
+
+
+
+ /*--- hide tooltip channel badge subs message's -----*/
+ .tw-pill--brand {
+    display: none  !important;
+}  /*--- hide tooltip channel badge subs message's -----*/
+
+
+/* --------- кнопка "  Chat Paused Due to Scroll" ---------- */
+/* --------- кнопка "  Chat Paused Due to Scroll" ---------- */
+
+.chat-paused-footer {
+    position: relative  !important;
+    width: 200px  !important;
+    height: 45px  !important;
+    top: -45px  !important;
+    opacity: 0.5  !important;
+    background: rgb(60, 39, 82)  !important;
+ }
+
+button.ScCoreButton-sc-ocjdkq-0:hover {
+    border: 1px solid  rgb(155 220 173 / 50%)  !important;
+    border-radius: 35px  !important;
+    color: rgb(208 211 179)  !important;
+    background: #041213  !important;
+    height: 45px  !important;
+ }
+
+p.CoreText-sc-1txzju1-0.irZUBM {
+     font-size: 16px   !important;
+}
+/* --------- кнопка " Chat Paused Due to Scroll" ---------- */
+/* --------- кнопка " Chat Paused Due to Scroll" ---------- */
+
+/*
+ * -------- Контейнер для чата: содержимое.
+ * -------- Скроллинг относится к scrollable area.
+ * -------- Немного опустим, чтобы не раздражал hover " Chat Paused Due to Scroll"
+ */
+ .Layout-sc-1xcs6mc-0.InjectLayout-sc-1i43xsx-0.etHxQt {
+    position: relative  !important;
+    top: 1px  !important;
+}
+/*
+ * -------- Контейнер для чата: содержимое.
+ * -------- Скроллинг относится к scrollable area.
+ * -------- Немного опустим, чтобы не раздражал hover " Chat Paused Due to Scroll"
+ */
+
+  /*------------ hide spam reward points highlight --------*/
+  /*------------ hide spam reward points highlight --------*/
+
+    .Layout-sc-1xcs6mc-0.eynKOr {
+        display: none  !important; 
+    }
+
+       .modified-emote span img {
+            pointer-events: auto  !important; 
+    }  
+     
+  /*------------ hide spam reward points highlight --------*/
+  /*------------ hide spam reward points highlight --------*/
+
+  /*------------- FFz modified-emote span  pointer-events: auto  !important;  ------*/
+  /*------------- FFz modified-emote span  pointer-events: auto  !important;  ------*/
+
+     
+/*------------- FFz modified-emote span  pointer-events: auto  !important;  ------*/
+  /*------------- FFz modified-emote span  pointer-events: auto  !important;  ------*/
+
+  /*------------ hide spam hypeTrain скрыть хайптрэин хайп траин --------*/
+  /*------------ hide spam hypeTrain скрыть хайптрэин хайп траин --------*/
+    .Layout-sc-1xcs6mc-0.hNRnhq.sticky-community-highlight {
+        display: none  !important;
+    }
+        /* или по aria-label */
+    button[aria-label="Cheer"] {
+        display: none  !important;
+    }
+  /*------------ hide spam hypeTrain скрыть хайптрэин хайп траин --------*/
+
+  

@@ -1,0 +1,40 @@
+
+/*================= hover block button showemote popu ===================*/
+#custom-ffz-emote-popup .close-ffz-popup-trhj8h5e4jk9 {
+  position: fixed !important;
+    top: 0px !important;
+    right: 20px !important;
+    cursor: pointer !important;
+    color: rgb(85, 255, 161) !important;
+    font-weight: bold !important;
+    user-select: none !important;
+    display: flex  !important;
+    justify-content: center  !important;
+} 
+ .emote-options {
+    position: relative !important; 
+    top: 8px !important; 
+    width: 205px !important; 
+}  
+/*================= hover block button showemote popu ===================*/
+
+
+/*================= hover button.copy-all-button:hover ===================*/
+
+ button.paste-all-button:hover,  
+.close-ffz-popup-trhj8h5e4jk9:hover,  
+button.send-to-chat-button:hover,  
+button.block-button:hover {
+       background: rgb(51 35 69) !important;  
+       color: rgb(226 173 44 / 90%) !important;  
+       border: solid 2px  !important;   
+       border-radius: 11px !important;  
+       cursor: pointer !important;  
+       font-size: 14px !important;  
+}
+
+button.block-button {
+     color: rgb(255 208 217) !important;  
+        background: rgb(138 51 51) !important;  
+}
+/*================= hover button.copy-all-button:hover ===================*/

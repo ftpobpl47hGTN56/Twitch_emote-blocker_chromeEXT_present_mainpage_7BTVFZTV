@@ -1,0 +1,165 @@
+ <!-- C:\Projects__on__SSD_C_Win10\Control_Panel_7BTVFZ__v2.155.26\panelcontrol26\v2.155.26\7btvfz_Panel_54h54.html ->
+
+ 
+ <!-------------7btvfz_Panel_54h54.html ----------------->
+
+<div id="control-7btvfz-center-x78x05x46-panel">
+     <!------------- Метка подпись активного списка ----------------->
+        <div id="active-list-label" class="active-list-label"></div>
+     <!------------- Ручки для изменения размера панели ------------->
+        <div class="resize-handle top"></div>
+        <div class="resize-handle bottom"></div>
+        <div class="resize-handle left"></div>
+        <div class="resize-handle right"></div>
+        <div class="resize-handle top-left"></div>
+        <div class="resize-handle top-right"></div>
+        <div class="resize-handle bottom-left"></div>
+        <div class="resize-handle bottom-right"></div>
+     <!------------- Контейнер для кнопок сортировки ------------->
+      <div id="sort-chatbanned-items-container"></div>
+        <div id="sortContainer"></div>
+     <!------------- Контейнер для списков ----------------------->
+        <div id="lists-container">
+            <ul id="blocked-emotes-list" class="list active">
+                <div class="blocked-emotes-list-container"></div>
+            </ul>
+            <ul id="banned-chat-list" class="list active">
+                <div class="banned-chat-list-container"></div>
+            </ul>
+        </div>
+     <!------------------------ Контейнер для ввода данных --------------------------->
+        <div class="input-container">
+            <select id="platform-select">
+                <option value="TwitchChannel">TwitchChannel</option>
+                <option value="7tv">7tv</option>
+                <option value="bttTV">bttTV</option>
+                <option value="ffz">ffz</option>
+                <option value="keyword">Keyword</option>
+                <option value="user">User</option>
+            </select>
+            <input type="text" id="add-input" placeholder="add channel/emote/keyword">
+            <button id="add-button">Add it</button>
+     <!------------------------ Кнопка для открытия модального окна настроек ---------------------->
+            <button id="settings-button" title="Open Settings">Settings</button> 
+        </div>
+     <!----------------------- Контейнер для управляющих кнопок ------------------------->
+        <div class="button-container">  
+            <button id="clear-all-button">Delete All</button>
+            <button id="show-stats-button">Show Stats Chart</button>
+            <button id="export-button">Export</button>
+            <button id="import-button">Import</button>
+            <button id="toggle-logging-button" class="${isLoggingEnabled() ? 'active' : ''}">
+        ${isLoggingEnabled() ? 'Logging On' : 'Logging Off'} 
+        </button>
+     <!------------------------ Новые кнопки для управления уведомлениями ----------------------------->
+    <button id="toggle-global-notifications-button" class="${window.Notifications.isGlobalNotificationsEnabled() ? 'active' : ''}">
+        ${window.Notifications.isGlobalNotificationsEnabled() ? 'Global Notifications On' : 'Global Notifications Off'}
+    </button>
+    <button id="toggle-isolated-notifications-button" class="${window.Notifications.isIsolatedNotificationsEnabled() ? 'active' : ''}">
+        ${window.Notifications.isIsolatedNotificationsEnabled() ? 'Isolated Notifications On' : 'Isolated Notifications Off'}
+    </button>
+    <!---------------------- кнопка для PreviewerMedia ------------------->
+               <button id="toggle-media-preview-button" class="${getStorage('isMediaPreviewEnabled', false) ? 'active' : ''}">
+                   ${getStorage('isMediaPreviewEnabled', false) ? 'Media Preview On' : 'Media Preview Off'}
+               </button>
+            <button id="unblock-all-button">Disable Blocking</button>
+            <button id="block-all-button">Enable Blocking</button>
+            <button id="clear-search-results-button" class="clear-search-results-button">Clear search results</button>
+        </div>
+     <!------------------------ Контейнер для кнопки закрытия панели ------------------------>
+        <div class="close-panel-container" style="text-align: right;">
+            <button id="close-panel-button" style="padding: 5px 10px;">✖ Close</button>
+        </div>
+     <!------------------------ Метка версии и авторства ---------------------->
+        <div class="version-label">v.2.155.26 (C) tapeavion</div>
+     <!------------------------ Ползунок для Hue Rotate ------------------->
+        <div class="hue-rotate-container">
+            <label for="hue-rotate-range">Hue Rotate : <span id="hue-rotate-value">360 °</span></label>
+            <input type="range" id="hue-rotate-range" min="0" max="360" value="360">
+        </div>
+     <!---------------------------- Поле поиска ---------------------->
+        <div class="search-input">
+            <input type="text" id="search-input" placeholder="Search in blocked list...">
+            <button id="search-button">Search</button>
+        </div>
+     <!------------------------ Выбор темы ------------------------->
+        <div class="theme-selector-container">
+            <select id="theme-select">
+               <option value="defaultThemeScrollbar">Default With Scrollbar</option>
+                <option value="default">Default Theme</option>
+                <option value="glassmorphism">Glassmorphism Theme</option>
+                <option value="dark">Dark Theme</option>
+                <option value="sapphireBlue">Blue Sapphire</option>
+                <option value="darkRaspberry">Dark Raspberry Theme</option>
+                <option value="lightMode">Light Mode</option>
+                <option value="deepSeaTurquoise">Deep Sea Turquoise</option>
+                <option value="amberBlaze">Amber Blaze</option>
+                <option value="amethystGlow">Amethyst Glow</option>
+                <option value="darkAncientNights">Dark Ancient Nights </option>
+            </select>
+        </div>
+     <!------------- Модальное окно для графиков ------------->
+        <div id="chart-modal" style="display: none;">
+            <div class="chart-container">
+                <button id="close-chart-button">Close</button>
+                <canvas id="stats-chart"></canvas>
+            </div>
+        </div>
+     <!------------- Модальное окно для выбора типа данных ------------->
+        <div id="data-selection-modal" class="data-selection-modal" style="display: none;">
+            <div class="data-selection-modal-content">
+                <h3>Select Data Type</h3>
+                <div class="data-selection-modal-options">
+                    <button id="select-blocked-items" class="data-selection-modal-button">Blocked Items</button>
+                    <button id="select-banned-keywords-phrases-list" class="data-selection-modal-button">Banned Keywords/Phrases</button>
+                    <button id="select-banned-users" class="data-selection-modal-button">Banned Users</button>
+                    <button id="select-chat-banned-items" class="data-selection-modal-button">Chat Banned Items</button>
+                </div>
+                <button id="modal-cancel" class="data-selection-modal-button cancel">Cancel</button>
+            </div>
+        </div>
+    <!-------------------------------- Модальное окно настроек --------------------------------->
+       <div id="settings-modal" class="modal" style="display: none;" role="dialog" aria-labelledby="settings-title" aria-modal="true">
+    <div class="modal-content">
+        <button id="close-modal-settings-button" class="close-modal-settings-button" aria-label="Close settings">close ✖</button>
+        <h3 id="settings-title">Settings ⚙️</h3>
+        <div class="drag-hwatalka-zahwata-modal-settings"></div>
+     <!------ Изменено с resize-handle на modal-resize-handle ------>
+        <div class="modal-resize-handle"></div>
+     <!------ Изменено с resize-handle на modal-resize-handle ------>
+        <div class="settings-container">
+            <div class="notification-setting">
+                <label class="ios-switch-label" for="global-notification-switch">Enable Global Notifications</label>
+                <label class="ios-switch">
+                    <input type="checkbox" id="global-notification-switch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="notification-setting">
+                <label class="ios-switch-label" for="isolated-notification-switch">Enable Isolated Notifications</label>
+                <label class="ios-switch">
+                    <input type="checkbox" id="isolated-notification-switch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="notification-setting">
+                <label class="ios-switch-label" for="emoji-spam-protection-switch">Enable Emoji Spam Protection</label>
+                <label class="ios-switch">
+                    <input type="checkbox" id="emoji-spam-protection-switch" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="notification-setting">
+                <label for="emoji-spam-limit-input">Emoji Spam Limit (min 1)</label>
+                <input type="number" id="emoji-spam-limit-input" min="1" max="330" value="200">
+            </div>
+        </div>
+    </div>
+</div>
+     <!---------------------- Счётчик ---------------------->
+        <div id="counter"></div>
+      </div>
+      <div id="open-panel-container" title="Open control panel">
+          <span id="open-panel-label">Open  panel</span>
+          <div id="open-panel-button"></div>
+      </div>
